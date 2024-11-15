@@ -1,0 +1,825 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.52f1 (1120fcb54228) revision 1122556'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26100) 64bit Professional' Language: 'ja' Physical Memory: 16124 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.52f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+C:/github personal/GC2_Horror/VRHorror
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+55268
+Successfully changed project path to: C:/github personal/GC2_Horror/VRHorror
+C:/github personal/GC2_Horror/VRHorror
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [3352]  Target information:
+
+Player connection [3352]  * "[IP] 10.252.0.238 [Port] 0 [Flags] 2 [Guid] 264975446 [EditorId] 264975446 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-CTBC4GQ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [3352]  * "[IP] 192.168.15.118 [Port] 0 [Flags] 2 [Guid] 264975446 [EditorId] 264975446 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-CTBC4GQ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [3352] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [3352] Host joined alternative multi-casting on [225.0.0.222:34997]...
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+Refreshing native plugins compatible for Editor in 8.87 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.52f1 (1120fcb54228)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.52f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/github personal/GC2_Horror/VRHorror/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3060 Laptop GPU (ID=0x2520)
+    Vendor:   NVIDIA
+    VRAM:     5996 MB
+    Driver:   32.0.15.6603
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.52f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.52f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.52f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56236
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.52f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.52f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.52f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.52f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.014661 seconds.
+- Loaded All Assemblies, in  0.347 seconds
+Native extension for WindowsStandalone target not found
+[usbmuxd] Start listen thread
+[usbmuxd] Listen thread started
+[usbmuxd] Send listen message
+Native extension for iOS target not found
+Native extension for Android target not found
+Unauthorized device detected, Id: 1WMHH8127G0411, please add debug authorization and reconnect.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+UnityEngine.Debug:LogFormat (string,object[])
+UnityEditor.Android.AndroidDeploymentTargetsExtension:GetKnownTargets (UnityEditor.DeploymentTargets.IDeploymentTargetsMainThreadContext,UnityEditor.ProgressHandler)
+UnityEditor.Android.TargetScanWorker:ScanSync ()
+UnityEditor.Android.TargetExtension:OnUsbDevicesChanged (UnityEditor.Hardware.UsbDevice[])
+UnityEditor.Android.TargetExtension:OnLoad ()
+UnityEditor.Modules.ModuleManager:InitializePlatformSupportModules ()
+
+Android Extension - Scanning For ADB Devices 2596 ms
+Native extension for OSXStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.899 seconds
+Domain Reload Profiling: 3243ms
+	BeginReloadAssembly (104ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (30ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (63ms)
+	LoadAllAssembliesAndSetupDomain (138ms)
+		LoadAssemblies (102ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (135ms)
+			TypeCache.Refresh (134ms)
+				TypeCache.ScanAssembly (120ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (2900ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (2856ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2688ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (116ms)
+			ProcessInitializeOnLoadMethodAttributes (43ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.699 seconds
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.769 seconds
+Domain Reload Profiling: 1464ms
+	BeginReloadAssembly (157ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (20ms)
+	RebuildCommonClasses (32ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (42ms)
+	LoadAllAssembliesAndSetupDomain (454ms)
+		LoadAssemblies (389ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (162ms)
+			TypeCache.Refresh (143ms)
+				TypeCache.ScanAssembly (127ms)
+			ScanForSourceGeneratedMonoScriptInfo (12ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (770ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (635ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (46ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (95ms)
+			ProcessInitializeOnLoadAttributes (452ms)
+			ProcessInitializeOnLoadMethodAttributes (24ms)
+			AfterProcessingInitializeOnLoad (12ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 5.74 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3093 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 19 unused Assets / (54.5 KB). Loaded Objects now: 3561.
+Memory consumption went from 123.7 MB to 123.7 MB.
+Total: 3.337400 ms (FindLiveObjects: 0.203700 ms CreateObjectMapping: 0.093400 ms MarkObjects: 2.944600 ms  DeleteObjects: 0.094300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 6646.883077 seconds.
+  path: Assets/Scripts
+  artifactKey: Guid(b4949622da1f5a64e8ba55055c41a5f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts using Guid(b4949622da1f5a64e8ba55055c41a5f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '1d73581f6621b80db4245e6ee29d381a') in 0.003346 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '2418d44e161e3ce2e8daeaa5c00c20e4') in 0.000599 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.978 seconds
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2022.3.52f1/Editor/Data/MonoBleedingEdge/lib/OVRPlugin
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2022.3.52f1/Editor/Data/MonoBleedingEdge/lib/OVRPlugin.dll
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2022.3.52f1/Editor/Data/MonoBleedingEdge/lib/OVRPlugin.dll
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2022.3.52f1/Editor/Data/MonoBleedingEdge/lib/OVRPlugin
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2022.3.52f1/Editor/Data/MonoBleedingEdge/lib/libOVRPlugin
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2022.3.52f1/Editor/Data/MonoBleedingEdge/lib/libOVRPlugin.dll
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2022.3.52f1/Editor/Data/MonoBleedingEdge/lib/libOVRPlugin.dll
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2022.3.52f1/Editor/Data/MonoBleedingEdge/lib/libOVRPlugin
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2022.3.52f1/Editor/Data/MonoBleedingEdge/lib/OVRPlugin
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2022.3.52f1/Editor/Data/MonoBleedingEdge/lib/OVRPlugin.dll
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2022.3.52f1/Editor/Data/MonoBleedingEdge/lib/OVRPlugin.dll
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2022.3.52f1/Editor/Data/MonoBleedingEdge/lib/OVRPlugin
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2022.3.52f1/Editor/Data/MonoBleedingEdge/lib/libOVRPlugin
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2022.3.52f1/Editor/Data/MonoBleedingEdge/lib/libOVRPlugin.dll
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2022.3.52f1/Editor/Data/MonoBleedingEdge/lib/libOVRPlugin.dll
+Fallback handler could not load library C:/Program Files/Unity/Hub/Editor/2022.3.52f1/Editor/Data/MonoBleedingEdge/lib/libOVRPlugin
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.285 seconds
+Domain Reload Profiling: 2251ms
+	BeginReloadAssembly (214ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (8ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (43ms)
+	RebuildCommonClasses (43ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (56ms)
+	LoadAllAssembliesAndSetupDomain (638ms)
+		LoadAssemblies (709ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (48ms)
+			TypeCache.Refresh (27ms)
+				TypeCache.ScanAssembly (18ms)
+			ScanForSourceGeneratedMonoScriptInfo (12ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (1286ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (645ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (51ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (132ms)
+			ProcessInitializeOnLoadAttributes (432ms)
+			ProcessInitializeOnLoadMethodAttributes (17ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Shader 'URP/UI/Prerendered Opaque': fallback shader 'UI/Prerendered Opaque' not found
+WARNING: Shader Unsupported: 'URP/UI/Prerendered Opaque' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'URP/UI/Prerendered Opaque' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Shader 'URP/UI/Prerendered': fallback shader 'UI/Prerendered' not found
+WARNING: Shader Unsupported: 'URP/UI/Prerendered' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'URP/UI/Prerendered' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 4.28 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3701 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 54 unused Assets / (10.4 MB). Loaded Objects now: 4143.
+Memory consumption went from 161.3 MB to 150.8 MB.
+Total: 4.108000 ms (FindLiveObjects: 0.208800 ms CreateObjectMapping: 0.092000 ms MarkObjects: 2.865800 ms  DeleteObjects: 0.940500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/OVRSkeleton.cs: 4089a33535ad2b1ded13028653b0b29d -> 
+  custom:scripting/monoscript/fileName/BlockData.cs: 21a052b5832d301ff7105f973ea6ed9a -> 
+  custom:scripting/monoscript/fileName/OVRDebugInfo.cs: cfc4bee954640453a689c3b78f804214 -> 
+  custom:scripting/monoscript/fileName/NetworkedGrabbableObjectInstallationRoutine.cs: 1c7804b18d023408973b8fb5c599144e -> 
+  custom:scripting/monoscript/fileName/SharedSpatialAnchorCoreBuildingBlock.cs: 303227851f3eae0ce6cf6ae395ace0c2 -> 
+  custom:scripting/monoscript/fileName/OVRPlugin.cs: 1cf4e81c0c45e035710ac01f232f4e79 -> 
+  custom:scripting/monoscript/fileName/OcclusionBlockSetupInfo.cs: 02d15e4d3c7b986d44bf4f5e748a9dd6 -> 
+  custom:scripting/monoscript/fileName/ProcessPort.cs: cca292dc7d0d8280410201636aa69389 -> 
+  custom:scripting/monoscript/fileName/OVRCompositionUtil.cs: c5547c5330a3f22a8516590ff4b796aa -> 
+  custom:scripting/precompiled-assembly-types:Meta.XR.Editor.PlayCompanion: 389169489520708c78a5384720b00c6f -> 
+  custom:scripting/monoscript/fileName/ConsoleLinkEventHandler.cs: de93f7c4fe9820d9eb80d0c91eb088e3 -> 
+  custom:scripting/monoscript/fileName/GuideStyles.cs: b186fc6db35860a295dff07a07c8cef2 -> 
+  custom:scripting/monoscript/fileName/OVRTrackedKeyboard.cs: 0dba310c15a5b41e4270b785fe5aa178 -> 
+  custom:scripting/monoscript/fileName/InlineLinkAttribute.cs: c20dc872e0eed8645539ddd5b3d70eb8 -> 
+  custom:scripting/monoscript/fileName/CategoryButton.cs: 138d4c90a6e2b4429bd57c6ada43f04a -> 
+  custom:scripting/monoscript/fileName/SampleMetadataInspector.cs: 5e83da4a88323ecb73986d921f6deb36 -> 
+  custom:scripting/monoscript/fileName/CompilationProcessor.cs: da097bfecae645f1ea977b53e3263016 -> 
+  custom:scripting/monoscript/fileName/OVRProjectSetupMovementSDKTasks2.cs: bd1655bb578c3bb9ea07580c21468838 -> 
+  custom:scripting/precompiled-assembly-types:Meta.XR.EnvironmentDepth: 7a1d6dc41d132b09b0ae12d4279644e2 -> 
+  custom:scripting/monoscript/fileName/HandTrackingBlockData.cs: 25fb0d6cbc9560e6f53c441814a7744c -> 
+  custom:scripting/monoscript/fileName/OVRCubemapCapture.cs: d9c931bcc75e18c6a61d0c90de33cac4 -> 
+  custom:scripting/monoscript/fileName/VariantAttribute.cs: 28db127e7df0ee4a575534cb04281851 -> 
+  custom:scripting/monoscript/fileName/SimpleJSON.cs: 58a9d9d12cb4213d0d62247fd2f06f3b -> 70c028a07c79c166db015acda1282d86
+  custom:scripting/monoscript/fileName/OVRScenePlaneEditor.cs: fc1623484f4031178d704a677cda94f8 -> 
+  custom:scripting/monoscript/fileName/OVRUserSettingsProvider.cs: 44e4fd52c44f0492851f54e28ad7ceec -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/PassthroughWindowBlockData.cs: ee78cc1e93842fdaec4980ce8d404fed -> 
+  custom:scripting/monoscript/fileName/OVRResult.cs: 59882804525cf42ebd4700daba59ce3d -> 
+  custom:scripting/monoscript/fileName/OVRProjectSetupCli.cs: ab2ca19dfe1ceea4aea4167f42bd46b3 -> 
+  custom:scripting/monoscript/fileName/OVRConfigurationTaskProcessor.cs: 7bbd0afab2940e7c946f2e46ac8b9e51 -> 
+  custom:scripting/monoscript/fileName/OVRTelemetryPopup.cs: 148a6b5cbe2e3cf822bd4c5b31028e06 -> 
+  custom:scripting/monoscript/fileName/OVRMixedReality.cs: 494d51f055df4517b364ce24c4d552e3 -> 
+  custom:scripting/monoscript/fileName/Menu.cs: f970940fba6c6a95f82f37f408b5fc47 -> 
+  custom:scripting/monoscript/fileName/ControllerButtonsMapper.cs: 33d42c19646cb8b2dfd36c66c01d42c9 -> 
+  custom:scripting/monoscript/fileName/ActionManager.cs: 1b3ab6fb7ad1cd148f2d8ed0618963c1 -> 1f8556b9a46f06673e6928b15c104c05
+  custom:scripting/monoscript/fileName/OVREditorShutdown.cs: 130ca45a896e6cdaca42dee5bc58a4bb -> 
+  custom:scripting/monoscript/fileName/ShareAndLocalizeParams.cs: 154af479bc2a60c4f00422e60f9650f2 -> 
+  custom:scripting/monoscript/fileName/ProxyCameraRig.cs: d157c4ca0039afa0628dc1d3290e5e95 -> 
+  custom:scripting/monoscript/fileName/OVROverlay.cs: 450b60a756d10846a01b262c3a9bdc34 -> 
+  custom:scripting/monoscript/fileName/OVRSystemPerfMetrics.cs: 854c7f4f29547e773cb1ac6c510f0ae5 -> 
+  custom:scripting/monoscript/fileName/OVRPlayerController.cs: 7e16f4b03397664de83d59817e159e6f -> 
+  custom:scripting/monoscript/fileName/OVRMixedRealityCaptureSettings.cs: cad2bc3d0e0f91c76a22749c13addfdb -> 
+  custom:scripting/monoscript/fileName/OVRControllerHelper.cs: d18797c49d52f0de61cd9f9ca6ae5f7c -> 
+  custom:scripting/monoscript/fileName/GizmoRenderer.cs: 44bf889fb193b71cfe6fe1cb74304cb8 -> 
+  custom:scripting/monoscript/fileName/CachedDictionary.cs: 30db9a0cace1bf25ae6317c86fac84be -> 
+  custom:scripting/monoscript/fileName/OVRExpansionFileGenerator.cs: 257f98fbabf150631a23b4bc3a00a2bd -> 
+  custom:scripting/monoscript/fileName/OverlayCanvasPanel.cs: ac70ca701f1f6292dfe121267e8bd11f -> 
+  custom:scripting/monoscript/fileName/PlayerVoiceChatInstallationRoutine.cs: 09fe2a46d30cc8ff9071834bc230d21b -> 
+  custom:scripting/monoscript/fileName/AlignCameraToAnchor.cs: 3f85ae298cede7f2ead34549df083bb9 -> 
+  custom:scripting/monoscript/fileName/OVRConfig.cs: 9c033eab21235dfa25bcfa71bdb4340a -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/InteractableController.cs: 93a96bd57871ae1ba0315d083dceeb2d -> 
+  custom:scripting/precompiled-assembly-types:Meta.XR.MultiplayerBlocks.Shared.Editor: c7e3db7be3ff5bbcc140e8ea33018726 -> 
+  custom:scripting/monoscript/fileName/OVREditorStart.cs: cbabaec3c6253bb552d44e16afef68a7 -> 
+  custom:scripting/precompiled-assembly-types:Meta.XR.Editor.Tags: b53715d65ddc092b2583bfe78630a111 -> 
+  custom:scripting/monoscript/fileName/ITaggable.cs: 03cb8bc361c9cf032285b772466b922a -> 
+  custom:scripting/monoscript/fileName/Guide.cs: 1e16fdbe3cb5aaac0139e465ca5f0165 -> 
+  custom:scripting/monoscript/fileName/InstallationRoutineCheckpoint.cs: a0aedb0981b71ccd0997553d39b4d76c -> 
+  custom:scripting/monoscript/fileName/OVRAnchor.Deprecated.cs: ab4f695c060bba45bd4ddbb644374346 -> 
+  custom:scripting/monoscript/fileName/ButtonForAction.cs: f527ce4bac18092662cd2e48647a213d -> 
+  custom:scripting/monoscript/fileName/OVRProfile.cs: 2d914fe1545d7ec7696886375fb42640 -> 
+  custom:scripting/monoscript/fileName/ConsoleLogsCache.cs: c4ba3d330720f17d6478623afcab425f -> 
+  custom:scripting/monoscript/fileName/SpatialAnchorLoaderBuildingBlock.cs: 8860a96664a41211e5e2cfd48953c29e -> 
+  custom:scripting/monoscript/fileName/SimpleJSONUnity.cs: 3984f2ee0535f2c7d199987cd66d5475 -> 
+  custom:scripting/precompiled-assembly-types:Meta.XR.MultiplayerBlocks.Shared: 7357c716b8f7a2d3e84106ddd4472987 -> 
+  custom:scripting/monoscript/fileName/OVRTelemetrySettings.cs: 1972831fdf556d7b4ed094f8b58a7e64 -> 
+  custom:scripting/precompiled-assembly-types:Meta.XR.ImmersiveDebugger.Editor: 910d623f458ea727ba7150025b07dd4b -> 
+  custom:scripting/monoscript/fileName/ZipBlockDownloaderData.cs: 30f5d10ac6ad275f9fa93b3fc6774afd -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/OVROverlayMeshGenerator.cs: 011740a1ff3b191dc3f1c8728548740a -> 
+  custom:scripting/monoscript/fileName/OVRSandwichComposition.cs: 0c0ef32df1aa973683be66134af69b53 -> 
+  custom:scripting/precompiled-assembly-types:Meta.XR.ImmersiveDebugger.Interface: 1b5d7b7347a742f02aa454f8b3a60476 -> 
+  custom:scripting/precompiled-assembly-types:Meta.XR.ImmersiveDebugger: fc45c8519a8d455ff4d0135f16822a93 -> 
+  custom:scripting/monoscript/fileName/OVRProjectSetupVirtualKeyboard.cs: d91ceff8aa4deef0b7996ef37dea6087 -> 
+  custom:scripting/monoscript/fileName/Style.cs: 56e38e5dce50660aa3926b4536898e4e -> 
+  custom:scripting/monoscript/fileName/FeatureStatusReporter.cs: 3ee5baf955be8e1cafe28f650546841e -> 
+  custom:scripting/monoscript/fileName/Shutdown.cs: 70ba60b3234c2f87701293363842e55a -> 
+  custom:scripting/monoscript/fileName/InstallationRoutine.cs: 61eadde7653664a6cfb8533e94cfff6e -> 
+  custom:scripting/monoscript/fileName/OVRRaycaster.cs: 46fbb2e234238a6834422a81f974e714 -> 
+  custom:scripting/monoscript/fileName/Cursor.cs: 8fe59019a097a384e13aad0d409015f1 -> 
+  custom:scripting/monoscript/fileName/SharedSpatialAnchorErrorHandler.cs: 22ad00a942426079ace74ed822e6e419 -> 
+  custom:scripting/monoscript/fileName/RunTimeUtils.cs: 86e9f8d49ffe5e65a6f1ec6645ddb194 -> 
+  custom:scripting/monoscript/fileName/OVRBounded2D.cs: c4c5e551e8d10558d78beec95c7c1d07 -> 
+  custom:scripting/monoscript/fileName/InitializeOnLoad.cs: 4bf06be26ee69dd86922eca71d4e5bfc -> 
+  custom:scripting/monoscript/fileName/OVRMonoscopic.cs: e4120ffed6615f26a9ce6a1976f98875 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/OVRCommon.cs: cae7e5de753a9a7589cbe8be50edf324 -> 
+  custom:scripting/monoscript/fileName/OVRLint.cs: 4beaaf4dfb5a878004a88a9395ac7806 -> 
+  custom:scripting/precompiled-assembly-types:Meta.XR.Editor.Callbacks: e7104616ca0a4b1083980571914312b1 -> 
+  custom:scripting/monoscript/fileName/OVRStorable.cs: fb6ccab5d071d4e6fbcc0305c0cbb92e -> 
+  custom:scripting/monoscript/fileName/FeatureManager.cs: 6537c3d1826cbe7c8e86f5ce1450a46d -> 
+  custom:scripting/monoscript/fileName/IDebugUIPanel.cs: eda767d4d88dd38e2abf833913e72982 -> 
+  custom:scripting/monoscript/fileName/OVRSceneVolumeMeshFilter.cs: 222ce15226690410fc466debd4929947 -> 
+  custom:scripting/monoscript/fileName/TagArray.cs: fa0b582d782e1308466e14f7e21e7169 -> 
+  custom:scripting/monoscript/fileName/DebugPanel.cs: 3e2293f965ceb874dd9c94e23c383f9f -> 
+  custom:scripting/monoscript/fileName/OVRSceneManager.cs: b98a1ebc6c0f29dea4af1ce4812a6559 -> 
+  custom:scripting/monoscript/fileName/OVRConfigurationTaskSourceCode.cs: 9c93f22ab76899318e293cdfdf44ec8f -> 
+  custom:scripting/precompiled-assembly-types:Meta.XR.MultiplayerBlocks.NGO.Editor: 5fccefa2cc7e3dc0c519af0bf811ed56 -> 
+  custom:scripting/monoscript/fileName/EnableUnpremultipliedAlpha.cs: 9a7c411af2fe11bc76fcb26eb97d5870 -> 
+  custom:scripting/monoscript/fileName/OVRPluginInfo.cs: ab65089a22b53fbfd5f5782597fadc42 -> 
+  custom:scripting/precompiled-assembly-types:Meta.XR.BuildingBlocks.DepthAPI.Editor: 6f2e9673cff70694a93a734975579c2e -> 
+  custom:scripting/monoscript/fileName/OVRProfilerScope.cs: 6433b1abf9c4d8cd7c7c8cf589247b0c -> 
+  custom:scripting/monoscript/fileName/INetworkData.cs: efbd7d193e04f3dd1634ea65ab075684 -> 
+  custom:scripting/monoscript/fileName/OVRUnityEditorSwitcher.cs: 1578e592b76e626dc9260837497af6c3 -> 
+  custom:scripting/monoscript/fileName/BlockDownloaderData.cs: 6f0350686a13bd58edc5d5bbcf0d7a3e -> 
+  custom:scripting/monoscript/fileName/OVRSceneVolumeEditor.cs: 60f0c68de831e43650ff00a2f1140a51 -> 
+  custom:scripting/monoscript/fileName/OVRMeshJobs.cs: 4f6c8dff643edbd05d0984779a6ca345 -> 
+  custom:scripting/monoscript/fileName/RoomMeshAnchor.cs: edebb588b96d44b5579e04ead4ad9dc6 -> 
+  custom:scripting/monoscript/fileName/OVRCustomFaceExtensions.cs: 42d7e1658a8f87fcf76fa3c901a35def -> 
+  custom:scripting/monoscript/fileName/SerializableInspectedItems.cs: efe1b48119a1dd45ae4d29c86f6ae7fa -> 
+  custom:scripting/monoscript/fileName/CustomHierarchyIcon.cs: 0e908bd6a8d294fac522ef3328bc6334 -> 
+  custom:scripting/monoscript/fileName/DebugMemberInspectorExtensions.cs: afb51c13883e32f5553e6cfa6563b091 -> 
+  custom:scripting/monoscript/fileName/OVRBounded3D.cs: e07707a2758ce968068c6c5115d7497c -> 
+  custom:scripting/monoscript/fileName/OVRDeviceSelector.cs: ca30caafb2a7c3f1adc9b48ac9f75887 -> 
+  custom:scripting/monoscript/fileName/Hook.cs: aa0b92e17f5a2b09bb0c06ac5368888d -> 
+  custom:scripting/monoscript/fileName/VoiceChatInterfaceBlockData.cs: 6fc95972968e33f4bf13d5fa054ef959 -> 
+  custom:scripting/monoscript/fileName/OVRObjectPool.cs: b92d5bf6476b226425dfc0f245125366 -> 
+  custom:scripting/monoscript/fileName/SceneListener.cs: f0f61ff9bf0e2f97802e150a0a808a5e -> 
+  custom:scripting/monoscript/fileName/TextFieldWithButton.cs: bd2db3e556c1d29b61d5731aae54ddfe -> 
+  custom:scripting/monoscript/fileName/Anchor.cs: 92526293f48daf731aca506561038232 -> 
+  custom:scripting/monoscript/fileName/OVRSpatialAnchor.cs: 836fdedd2f72d1ffbab3f3c1521d365f -> 
+  custom:scripting/precompiled-assembly-types:Meta.XR.Guides.Editor: b01485820027e280ca8aeb00d55a6b1f -> 
+  custom:scripting/monoscript/fileName/OVRAnchor.Deferred.cs: c866042f0ec1076bc58b4f5461116223 -> 
+  custom:scripting/monoscript/fileName/OVRProjectSetupReport.cs: f0eb41de6f4ac7679629803d3ae345bc -> 
+  custom:scripting/monoscript/fileName/NetworkAdapter.cs: 8316d2ebb3987b8e4d99802ee4c6a7e0 -> 
+  custom:scripting/monoscript/fileName/OVRCameraRig.cs: 63cbce270accfd83de9dc67a2a62b602 -> 
+  custom:scripting/monoscript/fileName/EnvironmentDepthManager.cs: 13e89e15624330ba939ed802ec88daa7 -> 
+  custom:scripting/monoscript/fileName/OVRRayHelper.cs: 98791174607c8f8dce027d328ad72ced -> 
+  custom:scripting/monoscript/fileName/DebugInspectorManager.cs: 5013ed863b9ec5609931b0c3418ef675 -> 
+  custom:scripting/precompiled-assembly-types:Meta.XR.MultiplayerBlocks.Fusion.Editor: 7c38f21e08f36451f303933bd3699d16 -> 
+  custom:scripting/monoscript/fileName/GuideWindow.cs: 4138c1a62b9d984a6347886f1510f99f -> 
+  custom:scripting/monoscript/fileName/OVRFaceExpressions.cs: f5b146c1a69d9cf173eaa9f44858157c -> 
+  custom:scripting/monoscript/fileName/Toggle.cs: a4470356fc3d11d85c6560fb9b83dadb -> fc59b554e8aca13c5f78dc9bb5f2dcbb
+  custom:scripting/monoscript/fileName/OVRGLTFLoader.cs: b62e900e0064c826e64edb51fc911e9b -> 
+  custom:scripting/monoscript/fileName/OVRDisplay.cs: a8d29e417dfba22f746b38091fb41117 -> 
+  custom:scripting/monoscript/fileName/GizmoManager.cs: dcb4339d365b440335d31cb47a187462 -> 
+  custom:scripting/monoscript/fileName/OVRRoomLayout.cs: 3be617588955ef00f421e09484f7bab0 -> 
+  custom:scripting/monoscript/fileName/OVRSceneAnchorEditor.cs: 5a1aa0bee678900aea83a2e844d4f1d4 -> 
+  custom:scripting/monoscript/fileName/OVRTelemetryMarker.cs: fd34221992c1655611309db73f8e576a -> 
+  custom:scripting/monoscript/fileName/DebugManager.cs: b2309abea1eb9804e9cd52c3c8e60d40 -> 
+  custom:scripting/monoscript/fileName/DebugInspector.cs: cd184821e66a9627235ee295dafcae99 -> 
+  custom:scripting/monoscript/fileName/SerializableDictionary.cs: 90647cc400823b41df847a6cbfc29026 -> 
+  custom:scripting/monoscript/fileName/Utils.cs: a579403f769930e5405284482ce9d6b4 -> 40c528c300bfc0733192292a788cb076
+  custom:scripting/monoscript/fileName/EnvironmentDepthUtils.cs: 461ecffa46c9416f2698754103275f5b -> 
+  custom:scripting/monoscript/fileName/FusionCustomPackageDependency.cs: 11bbf7ebab283f944143fbe8276c0833 -> 
+  custom:scripting/monoscript/fileName/OVRProjectSetupPassthrough.cs: 801860532f1695d26272821805bdaadc -> 
+  custom:scripting/monoscript/fileName/OVRProjectSetupMovementSDKConfigurationTasks.cs: 80e595f8343d54e197f9bf6ddd02d14f -> 
+  custom:scripting/monoscript/fileName/OcclusionBlockData.cs: e6d2c89f1c96c77a8b2976a858230f17 -> 
+  custom:scripting/monoscript/fileName/PhotonVoiceCustomPackageDependency.cs: c8e6ce803fe6389fad8f6344df816b89 -> 
+  custom:scripting/monoscript/fileName/UIButtonSquishHelper.cs: cffc1e29cf33a518dd1bab71186979d9 -> 
+  custom:scripting/monoscript/fileName/OVRProjectSetupSettings.cs: 8e5e1200ab8ede96411fb76114a1ddef -> 
+  custom:scripting/monoscript/fileName/SetupRules.cs: 18fbfbc77af047ac6e18fda44ae1627e -> 
+  custom:scripting/monoscript/fileName/OVRSpatialAnchor.deprecated.cs: 0ecf0b5b4a9207402e80b603ad9a119c -> 
+  custom:scripting/monoscript/fileName/OVREngineConfigurationUpdater.cs: 9fc41aa5fc1344bd063a3335740a4f80 -> 
+  custom:scripting/monoscript/fileName/Overridable.cs: 90647cc400823b41df847a6cbfc29026 -> 
+  custom:scripting/monoscript/fileName/OVRSceneChangeListener.cs: e730175e86a5081cf41becf648351de1 -> 
+  custom:scripting/monoscript/fileName/OVREnumExtensions.cs: 0ec7fb537c7fd5a6226e431540437375 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/INetworkMessenger.cs: 7314d5ea0c4e0e894268d6b88ec1cb12 -> 
+  custom:scripting/monoscript/fileName/OVRProjectSetupBuildValidator.cs: 72a35105cfbffaaad214de6a91faeafd -> 
+  custom:scripting/monoscript/fileName/InputActionSet.cs: 433ac3369f442f38b58fbe0aaf5a2a86 -> 
+  custom:scripting/monoscript/fileName/OVRScreenshotWizard.cs: 23e1e8323fd0ba16d881336123a032df -> 
+  custom:scripting/monoscript/fileName/OVRExternalComposition.cs: 2139c0d57ae12ffbbf0336baa7bbcfbf -> 
+  custom:scripting/monoscript/fileName/OVRKeyboard.cs: e2cbf940cac904e7d6778b302ccc4511 -> 
+  custom:scripting/monoscript/fileName/OVRDirectorySyncer.cs: ba2c651c614c0b0cc7065f97a2a3e59f -> 
+  custom:scripting/monoscript/fileName/OVROverlayCanvasSettings.cs: 80489dbcc230628cfb41b2107cf22801 -> 
+  custom:scripting/monoscript/fileName/InspectorPanel.cs: 41d313e609085f4f63a89fc1c590d079 -> 
+  custom:scripting/monoscript/fileName/OVRGLTFAnimatinonNode.cs: 488e88a2f08dc4b5647c61d450d7fd2e -> 
+  custom:scripting/monoscript/fileName/OVRControllerTest.cs: 5967ece673ee772d6556556c2e477123 -> 
+  custom:scripting/monoscript/fileName/OVRSemanticLabels.cs: 311947a01418a4dd0e164bd8fe7a2060 -> 
+  custom:scripting/monoscript/fileName/NetworkDataUtils.cs: 97d343a5745f18884f5b249f3ee2284e -> 
+  custom:scripting/monoscript/fileName/OVRManager.Features.cs: 90647cc400823b41df847a6cbfc29026 -> 
+  custom:scripting/monoscript/fileName/OVREnumerable.cs: eb77d1c685b45364746af45a0870a2c8 -> 
+  custom:scripting/monoscript/fileName/Flex.cs: 5c9ac4c92b0e4fdea0ecb61cbd0e69b2 -> 
+  custom:scripting/monoscript/fileName/OVRHand.cs: 86333e673f855d3af184a82f46082653 -> 
+  custom:scripting/monoscript/fileName/OVRSemanticClassification.cs: 11501345542377fc5c463744fee803b3 -> 
+  custom:scripting/monoscript/fileName/OVRSceneLoader.cs: 72428051117cc1ca8c573062ec80762e -> 
+  custom:scripting/monoscript/fileName/OVRSceneObjectTransformType.cs: 8fe72068fa6fb23355a28b0814f439e9 -> 
+  custom:scripting/monoscript/fileName/BuildingBlock.cs: cb97d0160229b3c2d96e8e080bed16c2 -> 
+  custom:scripting/monoscript/fileName/OVRLayerAttribute.cs: 817815071e7347531b199c4a2ec9c115 -> 
+  custom:scripting/monoscript/fileName/InspectedData.cs: 338ba383e2fec681da86b828771bbf84 -> 
+  custom:scripting/monoscript/fileName/OVRInputModule.cs: cb4e1ce82e750627ca57bc0593fd703a -> 
+  custom:scripting/monoscript/fileName/OVRSceneRoomEditor.cs: adc58bea63842c0fa2d4ff5a94da72a9 -> 
+  custom:scripting/monoscript/fileName/PhotonPackagesImportProcessor.cs: 82bf726bb2985d038e3d699c0b11c5db -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/OVRPointerEventData.cs: 5076c026f92fa1a22c59fee6291b212f -> 
+  custom:scripting/monoscript/fileName/EyeGazeBlockData.cs: 1535aa097ea3621d9308b64e6aa435d9 -> 
+  custom:scripting/monoscript/fileName/OVREditorUtils.cs: 5e74e0e728c1d5af5ffbec0696278cb4 -> 
+  custom:scripting/monoscript/fileName/OVRVirtualKeyboardSampleWPMPrompt.cs: 859b4769e59d34020a687c582c0a3290 -> 
+  custom:scripting/monoscript/fileName/OVRSpaceQuery.cs: a7ce2b6009b9c57cdfc7d940bb7d786c -> 
+  custom:scripting/monoscript/fileName/OVRSceneModelLoader.cs: 56d1dcb08105179ba10d7af66099d298 -> 
+  custom:scripting/monoscript/fileName/OVRChromaticAberration.cs: d64399c2519fcca718117dadb51bfaf0 -> 
+  custom:scripting/monoscript/fileName/OVRSystemSplashScreenEditor.cs: d6ccd3f7f1c254e7df593789da0f1e47 -> 
+  custom:scripting/monoscript/fileName/OVRRuntimeController.cs: db01146c406a28795b576a91401cb11b -> 
+  custom:scripting/monoscript/fileName/InputSettings.cs: fbb15b84b47d8edbb9a3bb2e59a212c8 -> 
+  custom:scripting/monoscript/fileName/AutomaticColocationLauncher.cs: 388c732c2b854086d150c49a67716c6d -> 
+  custom:scripting/monoscript/fileName/AnchorDebugVisual.cs: a7dfd812a2bb8cd20d63d665d5343d4e -> 
+  custom:scripting/monoscript/fileName/Panel.cs: 9aa2720e4e03a1e05df4116cf7bb4e08 -> 
+  custom:scripting/monoscript/fileName/OVRProgressIndicator.cs: 54f04a1450197a3b630cf5eafcf5569b -> 
+  custom:scripting/monoscript/fileName/OVRNetwork.cs: 141d87ad14ab31035e71c1f1dae00945 -> 
+  custom:scripting/monoscript/fileName/OVRGLTFAccessor.cs: 57aa62a1b577decca7be848584d8c1e0 -> 
+  custom:scripting/monoscript/fileName/MemberInfoExtensions.cs: 337ee92643ac0da1a6306f10967f19b7 -> 
+  custom:scripting/monoscript/fileName/Feature.cs: 3af74c9a7a626473c633fc7dae11d581 -> 
+  custom:scripting/monoscript/fileName/RuntimeSettingsBuildProcessor.cs: aaadc5e7dd453988aef01784e813d89c -> 
+  custom:scripting/monoscript/fileName/TagBehavior.cs: 564fef148791e9ad42b64bcb5ba079a2 -> 
+  custom:scripting/monoscript/fileName/DebugGizmos.cs: e78df09a6b6dbd4e95b4fa3818f04f68 -> 
+  custom:scripting/monoscript/fileName/InstallationWindow.cs: 9618ae9789ea1273d2ed544587eda143 -> 
+  custom:scripting/monoscript/fileName/OVRHumanBodyBonesMappingsInterface.cs: 92339b30bea38715007ec6972a2b774f -> 
+  custom:scripting/monoscript/fileName/Telemetry.cs: ec2032afb87c6c51f48296452211dff4 -> 
+  custom:scripting/monoscript/fileName/OVRMovementTool.cs: 84d795694880b64a976a5f1a85bd92e1 -> 
+  custom:scripting/monoscript/fileName/RoomMeshController.cs: c8514708bf3ce851db866517164fa5c1 -> 
+  custom:scripting/precompiled-assembly-types:Meta.XR.Editor.UserInterface: f1db0ae91ba4f3b5dd48a69f5b145677 -> 
+  custom:scripting/monoscript/fileName/SessionQueue.cs: 8a164dfe92b904df51e87d55d6d87ee0 -> 
+  custom:scripting/monoscript/fileName/AssetPostProcessor.cs: 0612d047450f2ed2e82fc8156c39f0df -> 
+  custom:scripting/monoscript/fileName/OVRSpace.cs: 418a4ad572765980590b4d948bc868f4 -> 
+  custom:scripting/monoscript/fileName/OVRSceneAnchor.cs: 465c244cedc3e1e7cfa500f7a397d530 -> 
+  custom:scripting/monoscript/fileName/OVRSkeletonMetadata.cs: 849ed7f5b11c9db237ef61b01c5a5104 -> 
+  custom:scripting/monoscript/fileName/OVRBuildInfo.cs: f91cb25e03fa656ca0d73ea09e83aa8f -> 
+  custom:scripting/monoscript/fileName/openvr_api.cs: 3a041cadde0e845ce5975087f4f07cca -> 
+  custom:scripting/monoscript/fileName/OVRBuildSettingsBuildProcessor.cs: 68481670ff77d48ff54f8f6f745ffb1a -> 
+  custom:scripting/monoscript/fileName/OVRVignette.cs: c768edd8ceacd7909b6c8a8aa9897d45 -> 
+  custom:scripting/precompiled-assembly-types:Oculus.VR.Editor: 355fb361c0e1f312ca271b569f9f0898 -> 
+  custom:scripting/monoscript/fileName/OVREditorUIElements.cs: 241349375380607b3eeac3e50ef714d3 -> 
+  custom:scripting/monoscript/fileName/OcclusionBuildingBlockEditor.cs: e7e4ba3c6adaefa9aed41533d07d6a38 -> 
+  custom:scripting/monoscript/fileName/CustomPackageDependencyRegistry.cs: 58ef39b726d2a996fcf8762412f22d36 -> 
+  custom:scripting/monoscript/fileName/OVRProjectSetupTelemetryEvent.cs: bd0403e028db28860af47c180847c21f -> 
+  custom:scripting/monoscript/fileName/BlocksWindow.cs: b5ba56f5d498a0680872c667aefe7ef9 -> 
+  custom:scripting/monoscript/fileName/TextField.cs: f6c60c9944c580ebb77f637b333f4dda -> 
+  custom:scripting/monoscript/fileName/OVRPhysicsRaycaster.cs: 1d61fbe2f2c94efb30f86fddf6bc8ed3 -> 
+  custom:scripting/monoscript/fileName/Tweak.cs: a7feea58c452e32c8c86fe8efeee0c58 -> 
+  custom:scripting/monoscript/fileName/OVRConfigurationTaskFixer.cs: 2faa3af8bc78773dc6410acd8e210ef7 -> 
+  custom:scripting/monoscript/fileName/OVRSceneSampleController.cs: 7e50a2c440c27adde34a8bf02cbafa16 -> 
+  custom:scripting/monoscript/fileName/TransferOwnershipOnSelect.cs: 2f07b185663ad6f0d09e8059a7a99ad7 -> 
+  custom:scripting/monoscript/fileName/BlockBaseData.cs: 9f0381de507d4c07145adb46f941b335 -> 
+  custom:scripting/monoscript/fileName/PassthroughProjectionSurfaceBuildingBlock.cs: 886810e72187a6a8fa17182b40aa8be2 -> 
+  custom:scripting/monoscript/fileName/OVRPlatformTool.cs: 973197790fa6cd40d133df9e0479494b -> 
+  custom:scripting/monoscript/fileName/OVRHandTest.cs: 6d28f1fa3b9b585455562261208a5a72 -> 
+  custom:scripting/monoscript/fileName/ProxyInputModule.cs: f5192a261d3c3a2897d1b276626ed866 -> 
+  custom:scripting/monoscript/fileName/OVRGradleGeneration.cs: 72ec606d16d1be0d098ba883d4dff978 -> 
+  custom:scripting/monoscript/fileName/OVRConfigurationTaskUpdater.cs: fbd6aacbd55f080457e02bcaf9e52e1d -> 
+  custom:scripting/monoscript/fileName/OVRAutoDestroyInMRC.cs: 42f08949e17238d8be51ccfe431054b7 -> 
+  custom:scripting/monoscript/fileName/GuideProcessor.cs: 011f81a9c08c9b24348303a366c57d7c -> 
+  custom:scripting/precompiled-assembly-types:Meta.XR.BuildingBlocks.Editor: 1437455d61962dffaab3685d628b18cf -> 
+  custom:scripting/monoscript/fileName/OVREditorUtil.cs: 369e3d5aedb2b074b11da24522f5954a -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/BlockDataIds.cs: 7dd12d7172ea353892f91a8906a53949 -> 
+  custom:scripting/monoscript/fileName/RoomMeshRules.cs: cb7de959220544f015862eb9f2503eb3 -> 
+  custom:scripting/monoscript/fileName/LinkLabel.cs: 408d315b88def03ffe8779cb0faa635b -> 
+  custom:scripting/monoscript/fileName/OVRTriangleMesh.cs: b9f7450ef8889cdd9ff56d201ee1da56 -> 
+  custom:scripting/monoscript/fileName/CustomIntegrationConfig.cs: b28a4c2f6b8682e799448914e5e435aa -> 
+  custom:scripting/monoscript/fileName/OVRModeParms.cs: 2944cd71678710942030be36db8373dc -> 
+  custom:scripting/monoscript/fileName/ExampleCustomIntegrationConfig.cs: 0c89d02b02a514088998480c4c5ccb11 -> 
+  custom:scripting/monoscript/fileName/IOVRAnchorComponent.cs: 90647cc400823b41df847a6cbfc29026 -> 
+  custom:scripting/monoscript/fileName/Button.cs: 72e06069048308e97163bcbdfe47980d -> 18874d3cd8f6e3668320e6beabdb6cbc
+  custom:scripting/monoscript/fileName/SpatialAnchorCoreSetupRules.cs: a5e5e565918bd0d7adfff59d7ffaa464 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/IDebugManager.cs: 9e199a9c7f20dd942ba48399e3415c7e -> 
+  custom:scripting/monoscript/fileName/OVRManager.cs: 0b2de6375f6242acd3bce8d8a8a30ebb -> 
+  custom:scripting/monoscript/fileName/OVRVirtualKeyboardHandInputHandler.cs: fca0a7a894d1c2a9f41603079ab14032 -> 
+  custom:scripting/monoscript/fileName/AvatarEntity.cs: 17be55ce8246d2fd03e1a2af2b841353 -> 
+  custom:scripting/precompiled-assembly-types:Meta.XR.BuildingBlocks: cd421e2654c204f02a86255b85edd3ff -> 
+  custom:scripting/monoscript/fileName/OVRReadOnlyAttribute.cs: d5bc198acc7018a94e39db465c3a68dd -> 
+  custom:scripting/monoscript/fileName/OVRRayTransformer.cs: 934841214e329987257f7d6204462bab -> 
+  custom:scripting/monoscript/fileName/OcclusionBuildingBlock.cs: 1ffc3bbc7d9ec2ce5abc898ba9103597 -> 
+  custom:scripting/monoscript/fileName/InstallationRoutineSelector.cs: 70a0c2450e0415a9a6ef4e8db3f0005f -> 
+  custom:scripting/monoscript/fileName/OVRManagerEditor.cs: 098ce96b19fa474a129057deabefccdc -> 
+  custom:scripting/monoscript/fileName/OVRProjectSetupXRTasks.cs: b57fe9f57c23b755f956ca80cc96bc6f -> 
+  custom:scripting/monoscript/fileName/NetworkedGrabbableObjectFusionInstallationRoutine.cs: 881288dc9393b7d793c3488086bf93b7 -> 
+  custom:scripting/monoscript/fileName/OVRShaderBuildProcessor.cs: d3f1ccc312e3dfd97d5ca03237754b5b -> 
+  custom:scripting/monoscript/fileName/OVRScenePlaneMeshFilter.cs: 5bd1b8536081285db22db4d72fdf2285 -> 
+  custom:scripting/monoscript/fileName/OVRTelemetryUtils.cs: 93292342a48293a6b2d5a7e98ffd508e -> 
+  custom:scripting/monoscript/fileName/ImageStyle.cs: a5c5219dd7776a3a15214d0f629cca1f -> 
+  custom:scripting/monoscript/fileName/OVRManifestPreprocessor.cs: ee2408bfe5c09d2ecb1fdf579165ae5e -> 
+  custom:scripting/monoscript/fileName/DataEditor.cs: 90647cc400823b41df847a6cbfc29026 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/TextureContent.cs: 0780f29d7c9170a4dfe0470719bbf0df -> 
+  custom:scripting/monoscript/fileName/OVRTask.cs: c3a52fe131177ce991cf49ed71e35299 -> 
+  custom:scripting/monoscript/fileName/Logger.cs: e5b0bb5247ac3464e8144adf6a480b42 -> 
+  custom:scripting/monoscript/fileName/ScrollViewport.cs: a21238139d1594a7e45ad1bbb0f7ac2f -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/OVRVirtualKeyboard.cs: fc2aca7c23005924e903e7e40a10fc72 -> 
+  custom:scripting/monoscript/fileName/OVRRuntimeAssetsBase.cs: 3ebb9a1e2e76185a5654b9872af7fffb -> 
+  custom:scripting/monoscript/fileName/CameraRigBBBlockData.cs: c45dbb07ed1bd1dde835796f9bfc73da -> 
+  custom:scripting/monoscript/fileName/DebugBar.cs: 8cb0ca37ffa4d40d3dc498fd4c4c0d50 -> 
+  custom:scripting/monoscript/fileName/OVRConfigurationTaskUpdaterSummary.cs: b7853b8dcf66c500379c3085007ec54a -> 
+  custom:scripting/monoscript/fileName/OVRConfigurationTaskProcessorQueue.cs: 7c0c749d52b5d40d3121e4a03fa94bcc -> 
+  custom:scripting/monoscript/fileName/Tag.cs: 94f4e9e30e7282a9ce36e2c48f262150 -> 
+  custom:scripting/monoscript/fileName/OVRDumpBuildInfo.cs: 386b1356b9a3b16888e162ff3c4ceca6 -> 
+  custom:scripting/monoscript/fileName/Switch.cs: 6defcd15ec98d28a9cd12193a799d67e -> 
+  custom:scripting/monoscript/fileName/OVRRuntimeSettings.cs: 226e231d38b011f22c539d12cf76a0be -> 
+  custom:scripting/monoscript/fileName/PolylineRenderer.cs: cb9aa99f87bc974e557bcc3487088aa4 -> 
+  custom:scripting/monoscript/fileName/OVRSceneManagerEditor.cs: 8bfa67f670b7c68740aab4beb123b03a -> 
+  custom:scripting/monoscript/fileName/UIEditorSetup.cs: 672ec7963029184235cba12c79f0624a -> 
+  custom:scripting/monoscript/fileName/ProxyFlex.cs: 90647cc400823b41df847a6cbfc29026 -> 
+  custom:scripting/monoscript/fileName/OVRSharable.cs: 28afd3e19868208df35307ba6b74ac42 -> 
+  custom:scripting/monoscript/fileName/OVRFace.cs: 4ab69b3fabd11be12300ad0febd18456 -> 
+  custom:scripting/monoscript/fileName/OptimizeTextureCompression.cs: 384a842ad2899223d126be925111d53f -> 
+  custom:scripting/monoscript/fileName/Background.cs: 320a131a8ce56207a80b81f2a4debdd3 -> 
+  custom:scripting/monoscript/fileName/OVRPlatformMenu.cs: d518bdbf166191682053e7af8efb3b28 -> 
+  custom:scripting/monoscript/fileName/OVRPointerVisualizer.cs: 6731b1a013b4281db65df4d8dbb72691 -> 
+  custom:scripting/monoscript/fileName/Styles.cs: 9216ea58dea5f9e52e73880339c70564 -> 1728aa377394bacc23133c7e998f0fa5
+  custom:scripting/monoscript/fileName/ColocationController.cs: 02d098469c9f216de0f24d9bd59e9cca -> 
+  custom:scripting/monoscript/fileName/OVRHandTrackingWideMotionModeSample.cs: a9ccb787a95827a937dd2e994fb0982a -> 
+  custom:scripting/monoscript/fileName/OVRTrackedKeyboardHands.cs: ba1f29ead870cdbda841d43db6bdbdbb -> 
+  custom:scripting/monoscript/fileName/Toolbar.cs: baf456686be9a348f534d2b8f011c3d1 -> 
+  custom:scripting/monoscript/fileName/GizmoTypesRegistry.cs: 0613a504899e8cdf3f21c201f220513a -> 
+  custom:scripting/monoscript/fileName/OVRAnchor.Telemetry.cs: ef67d0fdcbbb3d35593984a2033cd092 -> 
+  custom:scripting/monoscript/fileName/OVRGrabbable.cs: 3d2b24da8e45ad1903e6a84ae84b7fff -> 
+  custom:scripting/monoscript/fileName/OVRTelemetryConsent.cs: 2d708e743d073b22770f0f972fb784ea -> 
+  custom:scripting/monoscript/fileName/SharedSpatialAnchorBuildingBlockEditor.cs: 1b7ecee9bf6ba43746a61e7154fd3d02 -> 
+  custom:scripting/monoscript/fileName/AssemblyParser.cs: 3bcf0335214be0742e61c0fa19b89af8 -> 
+  custom:scripting/monoscript/fileName/HandTrackingSetupRules.cs: a3078ce65b11a6f1c7d7167bb5248992 -> 
+  custom:scripting/monoscript/fileName/OVRLayerAttributeEditor.cs: 96c6dfac88e95f5f0342c0a47dbe5bf8 -> 
+  custom:scripting/monoscript/fileName/OVRHapticsClip.cs: 0a2f280194a8649cf358bef275f83a25 -> 
+  custom:scripting/monoscript/fileName/ButtonWithIcon.cs: 124b982d8c7cdc2a43637c295aacec4b -> 
+  custom:scripting/monoscript/fileName/SharedSpatialAnchorCoreBlockData.cs: 6b6047a11080f3761e61ae685ff67255 -> 
+  custom:scripting/monoscript/fileName/OVRPassthroughColorLut.cs: 740375b1e7ec5eff231e6f4c17452916 -> 
+  custom:scripting/monoscript/fileName/OVRRecord.cs: 2b908e77ae377a22f4da0bc63c7a7d49 -> 
+  custom:scripting/monoscript/fileName/SharedAnchorManager.cs: 71599372670e69529c6eea75bf5783b1 -> 
+  custom:scripting/monoscript/fileName/OVRMesh.cs: fd000ecf166f6f97ade6851d700e63a7 -> 
+  custom:scripting/monoscript/fileName/FollowAndCreateAnchorAtHandPositionBuildingBlock.cs: 1c889ec68497f453a1a5737f52f8838d -> 
+  custom:scripting/monoscript/fileName/AlertViewHUD.cs: 1dcb3ab6ef562e9a57fa33bceabb1b9f -> 
+  custom:scripting/monoscript/fileName/OVROverlayCanvasEditor.cs: b1bb00d746367fd9bdf3807432692436 -> 
+  custom:scripting/monoscript/fileName/ScrollView.cs: 458a10aca3d6f3ce77bbf4e3d0dc7dd3 -> 
+  custom:scripting/monoscript/fileName/Slider.cs: 8ce4232b2df6dda9288460237513eb64 -> fa9653030ac65718025b6955291e99ef
+  custom:scripting/monoscript/fileName/OVRProjectSetupUtils.cs: ac62d9c485c77e5a962b654d7ddf0100 -> 
+  custom:scripting/monoscript/fileName/DebugAttributes.cs: 735455c6264c12c7dd0df32975e40d8a -> 
+  custom:scripting/monoscript/fileName/OptionalLambdaType.cs: 5e2ab9cfe81e04de31d18dbafae66b8c -> 
+  custom:scripting/monoscript/fileName/NetworkInstallationRoutine.cs: f9cd09d1de8d47952b0f8eac4eca71c7 -> 
+  custom:scripting/monoscript/fileName/OVRCustomFace.cs: 2183a6924d344c0e772d523e03fe14ce -> 
+  custom:scripting/monoscript/fileName/NetworkedGrabbableObjectNGOInstallationRoutine.cs: 1566cb99575b33a5af7fee50332a9034 -> 
+  custom:scripting/monoscript/fileName/OVRProjectSetupDrawer.cs: c5e74bffe4df9a2fbb5e6405f30c05bd -> 
+  custom:scripting/monoscript/fileName/TagArrayDrawer.cs: b33e9f5e4f2b51c27a4d1bcd2012751c -> 
+  custom:scripting/monoscript/fileName/OVRSceneOpen.cs: 411b959ec9f77dd92e62498c8c7319e2 -> 
+  custom:scripting/monoscript/fileName/InstanceHandle.cs: 78db83aeb9d21b78013f4dfff2819474 -> 
+  custom:scripting/monoscript/fileName/OVRInput.cs: 184d96425783f03c0daf18b14b9c5478 -> 
+  custom:scripting/monoscript/fileName/OVRLocatable.cs: 6ffc4f2e149a842dd7723b4a078c11e4 -> 
+  custom:scripting/monoscript/fileName/OVRProfilerDeprecated.cs: 458ac840e718d4faa4623436d0cdd3ad -> 
+  custom:scripting/monoscript/fileName/OVRCursor.cs: a05a36200aa0ba1d529c9c622263fad1 -> 
+  custom:scripting/precompiled-assembly-types:Meta.XR.EnvironmentDepth.Editor: 4d576a615df8b6a16bb20ef289b72841 -> 
+  custom:scripting/monoscript/fileName/Controller.cs: 6129dcb9b259233d0dbbf36ee448c733 -> 
+  custom:scripting/monoscript/fileName/Value.cs: 045b10ece0418bd29ac2efa273811c08 -> 
+  custom:scripting/monoscript/fileName/SharedSpatialAnchorCore.cs: cda4c925865ceabd5cbd27c3fa43f6c6 -> 
+  custom:scripting/monoscript/fileName/OVRGridCube.cs: ba38cb6ae62392f3a49a8cbd3607c128 -> 
+  custom:scripting/monoscript/fileName/HeaderWithLinkAttribute.cs: 09b7791758fa09db902b5cb552707c48 -> 
+  custom:scripting/monoscript/fileName/GizmoRendererManager.cs: 863a94a205dff7faf017015304c391ff -> 
+  custom:scripting/monoscript/fileName/SpatialAnchorLocalStorageManagerBuildingBlock.cs: 420820af17937e7eb1543334bb149f63 -> 
+  custom:scripting/monoscript/fileName/OVRTelemetry.cs: d2bfc57c187ca06439a944100577f109 -> 
+  custom:scripting/monoscript/fileName/SampleSpatialAnchorBlockData.cs: b8705ecc5b2e88f222ed0785de9a4eb9 -> 
+  custom:scripting/monoscript/fileName/OVRResources.cs: c189660328e733913afdbf5c04b68dac -> 
+  custom:scripting/monoscript/fileName/BlockDataEditor.cs: 8486f5374fccaf4ca99f995c282f6039 -> 
+  custom:scripting/monoscript/fileName/OVRTrackedKeyboardSampleControls.cs: 0a80a583950748a84afd652b835fbd0a -> 
+  custom:scripting/monoscript/fileName/OVRProjectSetupRenderingTasks.cs: e9ee390eec541b48f1d766a8b513b585 -> 
+  custom:scripting/precompiled-assembly-types:Meta.XR.Editor.StatusMenu: b6c4aad0991903886ec5632ac6747de1 -> 
+  custom:scripting/monoscript/fileName/OVRSkeletonEditor.cs: 7a423cb6f6451e2bf690bd631a7438c8 -> 
+  custom:scripting/monoscript/fileName/OVRControllerDrivenHandPosesSample.cs: 1124c15dcde29453313b51e24b0acb5c -> 
+  custom:scripting/monoscript/fileName/OVRSkeletonRenderer.cs: 8f2aa4b741ebc57c2f0487fc1ee04c17 -> 
+  custom:scripting/monoscript/fileName/Icon.cs: 07321b0732081ac163588508a88814be -> 
+  custom:scripting/monoscript/fileName/OVRHeadsetEmulator.cs: 2d6805cac066cb011394199db4983a76 -> 
+  custom:scripting/monoscript/fileName/OVRProjectSetupSettingItem.cs: 8282bfc2a10f6c0a1c5e46de59aee503 -> 
+  custom:scripting/monoscript/fileName/OVRDebugHeadController.cs: d9daafc2051fbc19670a8a0e3559d756 -> 
+  custom:scripting/monoscript/fileName/OVRSemanticClassificationEditor.cs: a93b4f3b036d47fa12832a962a11a476 -> 
+  custom:scripting/monoscript/fileName/OVRGazePointer.cs: 75542746bf6b3d178f379818ff5c6335 -> 
+  custom:scripting/monoscript/fileName/OVREyeGaze.cs: 7527879cf2c414c53742365fd79a14a1 -> 
+  custom:scripting/monoscript/fileName/OVRTelemetryConstants.cs: 3f6332781a3863071b01e878b5658cc4 -> 
+  custom:scripting/monoscript/fileName/OVRBodyEditor.cs: 79d8ff55059b176fab8be7873fbcbeea -> 
+  custom:scripting/monoscript/fileName/OVRSystemProfilerPanel.cs: 31cc9fe8a210de16d394d594f0d1e1fd -> 
+  custom:scripting/precompiled-assembly-types:Oculus.VR: 99df4ecf79eb28c9ac82fbb670be98d7 -> 
+  custom:scripting/monoscript/fileName/AddSpace.cs: 6a8f2bc1e4239aad3acd0b82baa8d83f -> 
+  custom:scripting/monoscript/fileName/LogEntry.cs: 7c9966c272361804176534bb1afe12df -> 
+  custom:scripting/monoscript/fileName/OVRPermissionsRequester.cs: a6bdedfda0b601298983e77c91bfc811 -> 
+  custom:scripting/monoscript/fileName/VariantsSelection.cs: 5788115a5ed9e1d6ab9e0b9a7426911c -> 
+  custom:scripting/monoscript/fileName/OVRProjectSetupCompatibilityTasks.cs: 9bf34529c2ebd89d6952faec200d6aca -> 
+  custom:scripting/precompiled-assembly-types:Meta.XR.BuildingBlocks.DepthAPI: 80e3f4d3329aabc862e414b4c282bad9 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/OVRCustomSkeletonEditor.cs: 2b322ef758d6c40cba154f2058cca15b -> 
+  custom:scripting/monoscript/fileName/OVRProjectSetup.cs: e350b45f9ceb30e6d99559b0f7af0e4b -> 
+  custom:scripting/monoscript/fileName/InstanceCache.cs: 6b2e434ca930a223c2c188359a6e26ac -> 
+  custom:scripting/monoscript/fileName/OVRShaderGUI.cs: 4af5150793cbe55be058c0a550330b13 -> 
+  custom:scripting/monoscript/fileName/OVRScene.cs: eda3e984ea045088856e825972996bb6 -> 
+  custom:scripting/monoscript/fileName/SampleMetadata.cs: 7d45096909e791fcbd2f83ebc408a8f4 -> 
+  custom:scripting/monoscript/fileName/OVRBody.cs: 04002b9008443bfe990fe6200343595d -> 
+  custom:scripting/monoscript/fileName/OVRAnchorContainer.cs: 8bcce5d0c7cd2f7e019a98c021aa5645 -> 
+  custom:scripting/monoscript/fileName/InstallationRoutineEditor.cs: e0ff693a6d91d2d333da21a171aa01f8 -> 
+  custom:scripting/monoscript/fileName/RuntimeSettings.cs: 333f6314b5267f890c6ddf7a807cedd4 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/OVRGLTFAnimationNodeMorphTargetHandler.cs: 19b7848bc9ebbdd997d79efa05c763ed -> 
+  custom:scripting/monoscript/fileName/OVRVirtualKeyboardControllerInputHandler.cs: d0ecfc2a52bc442eca6147cb3185f155 -> 
+  custom:scripting/monoscript/fileName/OVRScreenFade.cs: aea89fa99351a232561e08bc42afde5b -> 
+  custom:scripting/monoscript/fileName/MetaXRBootConfig.cs: b446365b770c882a18dc4042b351c595 -> 
+  custom:scripting/monoscript/fileName/OVRVirtualKeyboardSampleControls.cs: 329f175b0320e3f925d8e6091b882fe6 -> 
+  custom:scripting/monoscript/fileName/IGuideItem.cs: 02e1a1965a655702319078676aac3ee8 -> 
+  custom:scripting/monoscript/fileName/OVRWaitCursor.cs: 52f7ed3016f9aca58e2987e3b7322f57 -> 
+  custom:scripting/monoscript/fileName/OVRProjectConfig.cs: 4f72e55e9a01d9fdc8e560cdf6c973c9 -> 
+  custom:scripting/monoscript/fileName/Interface.cs: 5be337514bdd4fae590284c239ad4cef -> 
+  custom:scripting/monoscript/fileName/OVRExperimentalCheck.cs: 451413c680a00b1b0c1d485e1cad47f5 -> 
+  custom:scripting/monoscript/fileName/OVRMixedRealityCaptureTest.cs: bd8a565834f00cf398e7ee4155466693 -> 
+  custom:scripting/monoscript/fileName/OVRSimultaneousHandsAndControllersSample.cs: 1342035866ba843df4e77fc51c3bc9df -> 
+  custom:scripting/monoscript/fileName/OVRProjectSetupUpdater.cs: c01ebbe1c105220e358822f83e11e257 -> 
+  custom:scripting/monoscript/fileName/OVRGrabber.cs: 6d33f3b1b21d00281078325c8140f051 -> 
+  custom:scripting/monoscript/fileName/ProxyController.cs: 90647cc400823b41df847a6cbfc29026 -> 
+  custom:scripting/monoscript/fileName/OVRNativeList.cs: 877757819403dc23df192310d103fb7b -> 
+  custom:scripting/monoscript/fileName/OVRHumanBodyBonesMappings.cs: 0cdf409b5aa8d4c25876d72b5c6a3b60 -> 
+  custom:scripting/monoscript/fileName/Console.cs: 6dda399f542686d515fc9c6e6a8e025f -> 
+  custom:scripting/monoscript/fileName/OVRDirectComposition.cs: f1e67492d2a43ca320b35f0592fc3dc9 -> 
+  custom:scripting/monoscript/fileName/Label.cs: d67f82b2fd366a60d7390312de739b6d -> 
+  custom:scripting/monoscript/fileName/OVRAnchorComponents.gen.cs: d51a7cbbfb500fba25940b96a6be5efb -> 
+  custom:scripting/monoscript/fileName/OVRCustomSkeleton.cs: 4ef60fbcab7c46daf5f2754f6bafd718 -> 
+  custom:scripting/monoscript/fileName/OVRResetOrientation.cs: 30927f9581d2252a5364bd6aa9e72072 -> 
+  custom:scripting/monoscript/fileName/Values.cs: 4d7476fcd0bf25bae8201aaba72030d5 -> 
+  custom:scripting/monoscript/fileName/OVRAudioSourceTest.cs: b700a0a5f10a135517d16c5af3cb07c7 -> 
+  custom:scripting/monoscript/fileName/WatchManager.cs: af86a03be14bde57dc8237952d7cc020 -> 
+  custom:scripting/monoscript/fileName/OVRAnchor.cs: ecf79f4209a939b5a936e214fc797208 -> 
+  custom:scripting/monoscript/fileName/Watch.cs: 4d6ddfb18dfb408307f46b3736480911 -> 
+  custom:scripting/monoscript/fileName/Member.cs: caefcc35ad5fb8b24c67b658a7bff997 -> ceb5179866de1e892bc980286bc0dca3
+  custom:scripting/monoscript/fileName/OVRSceneVolume.cs: 110f534b9358dd2092c634d2dbe20e2c -> 
+  custom:scripting/monoscript/fileName/VirtualKeyboardBlockData.cs: b532a35da959dd12efb703f1dcaffb33 -> 
+  custom:scripting/monoscript/fileName/PointerHandler.cs: bec7e689f3374baaeab2c960c1a53bb2 -> 
+  custom:scripting/monoscript/fileName/OVRAnchor.FetchOptions.cs: c866042f0ec1076bc58b4f5461116223 -> 
+  custom:scripting/monoscript/fileName/BlockContextMenu.cs: 054f44be857528665845648a6d14f1fc -> 
+  custom:scripting/monoscript/fileName/Item.cs: 0cd66629a3c3e349d400b4d509c0e828 -> 
+  custom:scripting/monoscript/fileName/BulletedLabel.cs: 1a51b5bf82b4cef8cf2813103565173e -> 
+  custom:scripting/monoscript/fileName/OVRVirtualKeyboardSampleInputHandler.cs: 62b1e4c31e309087038938d5728d261d -> 
+  custom:scripting/monoscript/fileName/DebugInterface.cs: 769311e3d011b62bff4e79e4cbf90720 -> 
+  custom:scripting/monoscript/fileName/OVRUnityHumanoidSkeletonRetargeterEditor.cs: f29bb3ebd4eb5c61454607f5c0aba32a -> 
+  custom:scripting/monoscript/fileName/OVRBoundary.cs: ec813812cdae8f63e36c7e87f439e047 -> 
+  custom:scripting/monoscript/fileName/OVRMeshRenderer.cs: 89acc8cba6a8da943cc8dad92b8b83a4 -> 
+  custom:scripting/monoscript/fileName/OVRADBTool.cs: 0f85b8a2c51ecbe7bdd3df909f685576 -> 
+  custom:scripting/monoscript/fileName/PanelInputModule.cs: 76d61968f30475f28dadd868808b40a3 -> 
+  custom:scripting/monoscript/fileName/OVRDeserialize.cs: dd2d871e8919aa72a90533a4c3d8a9cd -> 
+  custom:scripting/monoscript/fileName/OVROverlayEditor.cs: f03a41eafa59b6586b7ccad2b2405243 -> 
+  custom:scripting/monoscript/fileName/OVRVirtualKeyboardInputFieldTextHandler.cs: 2616f9e1c9b4d44e6b31cedd21d9967c -> 
+  custom:scripting/monoscript/fileName/ControllerTrackingBlockData.cs: 39beab5f64094c52ced98adcec316fe8 -> 
+  custom:scripting/monoscript/fileName/SceneSetup.cs: 24b2882cc65db5966b0086c72ea89f23 -> 
+  custom:scripting/monoscript/fileName/SampleTelemetryEvents.cs: ea10f0329cce9274485e6e6c6bbcc820 -> 
+  custom:scripting/monoscript/fileName/OVRTracker.cs: 4995fdcc30ba0c41e9f869ba90f0129e -> 
+  custom:scripting/monoscript/fileName/ControllerInspector.cs: a263e63bb98439bf4cecfb92dee7db49 -> 
+  custom:scripting/monoscript/fileName/OverlayCanvas.cs: 8887f22594d7e63fc44f2d61c75bce4c -> 
+  custom:scripting/monoscript/fileName/OVRPassthroughHelper.cs: a103d28d0a67b9bac403592c7cc2dea7 -> 
+  custom:scripting/precompiled-assembly-types:Oculus.VR.Scripts.Editor: 23bfd3e8fff532232d64ce3052961ddc -> 
+  custom:scripting/monoscript/fileName/OVRProjectSetupPhysicsTasks.cs: c5aa366ecf0db6619d6cf23e82013fd3 -> 
+  custom:scripting/monoscript/fileName/StatusIcon.cs: ca06ddf28040fbdb09c2fdf67941d7ac -> 
+  custom:scripting/monoscript/fileName/OVRConfigurationTask.cs: 0705297f39c35fffd5c2bce672ae0ce5 -> 
+  custom:scripting/monoscript/fileName/OVRConfigurationTaskException.cs: 59119ed3bd2f18b8edfb66d04e38c7fd -> 
+  custom:scripting/monoscript/fileName/CameraRigSetupRules.cs: 2d08ef447fee4ed512dee5833e9bb4e9 -> 
+  custom:scripting/monoscript/fileName/Player.cs: e583a9c37ca880a77e54457cba4e8c82 -> 
+  custom:scripting/monoscript/fileName/OVRSceneRoom.cs: 799fe5a2a04fe64818bd030bdfa0d002 -> 
+  custom:scripting/monoscript/fileName/ProjectSetupDepthAPI.cs: dc9a0efc2b8c284f3010d106db44101d -> 
+  custom:scripting/monoscript/fileName/OVRScenePlane.cs: fbd8892694f668448e5ba0d1c70b2d2f -> 
+  custom:scripting/monoscript/fileName/ConsoleLine.cs: d1b222f670ddf968b165c7b6dc1ee706 -> 
+  custom:scripting/monoscript/fileName/VariantHandle.cs: 89896b5eb7181f7c0d93f72fb5f0f653 -> 
+  custom:scripting/monoscript/fileName/RoomMeshEvent.cs: 22ebb1b5f7ba5fbf962fa29b5a08ca58 -> 
+  custom:scripting/monoscript/fileName/OVRSampledEventSender.cs: 5ed469875db0eee2db51deb3bc9375cd -> 
+  custom:scripting/monoscript/fileName/OVRPassthroughLayer.cs: 75ecb7e945f187a2841de33cc9b1ead1 -> 
+  custom:scripting/monoscript/fileName/Manager.cs: 9574f56308e5109331f7893ccf8d2190 -> 
+  custom:scripting/monoscript/fileName/OVRProjectSetupSceneTasks.cs: 8628a01163361bc5ae7ad2d5b0b8caa5 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/ToggleForGizmo.cs: 556caa1ce956ac3e3eed78210c11ba0b -> 
+  custom:scripting/monoscript/fileName/TweakManager.cs: f8ffa3bf69a324e1fc797f0546a56cc9 -> 
+  custom:scripting/monoscript/fileName/GizmoHook.cs: fc26e578f678cf158499ea60cea6c679 -> 
+  custom:scripting/monoscript/fileName/OVRKtxTexture.cs: f619689c5d4191280be13d05458e347c -> 
+  custom:scripting/monoscript/fileName/OVRProjectConfigEditor.cs: 57859ec4abe010a30b8520b3f9eb67ed -> 
+  custom:scripting/monoscript/fileName/BlocksContentManager.cs: 32eb566413a8b5f16d38dca2b3a89555 -> 
+  custom:scripting/monoscript/fileName/OVRPluginInfoOpenXR.cs: 879fe056b3c49334524353b4feffdf02 -> 
+  custom:scripting/monoscript/fileName/SpatialAudioBlockData.cs: d328cfa2194810481df779ecc5842b68 -> 
+  custom:scripting/monoscript/fileName/Settings.cs: 85d5f457f3d6906b0b789af84ab957ee -> ea9d1b04d3864b3b689bed16ba2743db
+  custom:scripting/monoscript/fileName/BuildingBlockEditor.cs: bd2e64f8755c49c994bb793f0b94cdbc -> 
+  custom:scripting/monoscript/fileName/AdrenoOfflineCompilerUtility.cs: a1aa903b98d9d0d6d71e3dca98e9f1f1 -> 
+  custom:scripting/monoscript/fileName/PlayerNameTagSpawner.cs: 10f1ddce96506afe2336a282a6d0be1c -> 
+  custom:scripting/monoscript/fileName/PassthroughBuildingBlockRules.cs: 25f1226ab3c7965c4a628857d40e6366 -> 
+  custom:scripting/monoscript/fileName/SpatialAnchorCoreBuildingBlock.cs: 78189bc9da38b380d99d8ab84ac186a8 -> 
+  custom:scripting/monoscript/fileName/OVRPassthroughLayerEditor.cs: 9e2bed512401d6533f0a32f5089a1e5c -> 
+  custom:scripting/monoscript/fileName/SpatialAnchorSpawnerBuildingBlock.cs: f54735b51d25ff17752517f7f8052d36 -> 
+  custom:scripting/monoscript/fileName/OVRReadOnlyDrawer.cs: a548f5840355a436475abc290cee436b -> 
+  custom:scripting/monoscript/fileName/PathHelper.cs: df54ade7ea3310ab403850496062dae5 -> 
+  custom:scripting/monoscript/fileName/OVRBuild.cs: 62dd5239722865ac167487ddf91459e4 -> 
+  custom:scripting/monoscript/fileName/OVRComposition.cs: e6dabbef35b985fa19a8d54054e6a243 -> 
+  custom:scripting/monoscript/fileName/ButtonWithLabel.cs: 08d307b546f514fe8963621409b25cd1 -> 
+  custom:scripting/monoscript/fileName/OVRMixedRealityCaptureConfiguration.cs: 555be2b9ed00a0063e1494611f06305a -> 
+  custom:scripting/monoscript/fileName/InterfaceBlockData.cs: 00dce2c19c46b1d43db0d1b9a4385aaf -> 
+  custom:scripting/monoscript/fileName/OVRScenePrefabOverride.cs: 896378b395baeb303f033f3f6fe97103 -> 
+  custom:scripting/monoscript/fileName/AutoMatchmakingFusionInstallationRoutine.cs: 969287254fd1d0edec6486afbd405544 -> 
+  custom:scripting/monoscript/fileName/OVRHaptics.cs: 180d89e38d1e1d966b322320055e5414 -> 
+  custom:scripting/monoscript/fileName/NetworkBootstrapperUtils.cs: 322ffe8162de3599123cf4818f44b505 -> 
+  custom:scripting/monoscript/fileName/AnimatedContent.cs: 82f874194e5b0f449fbbdb3d33d398bc -> 
+  custom:scripting/monoscript/fileName/OVRRuntimeSettingsBuildProcessor.cs: 1c3d58765dd42d4ff2e34b727babda4b -> 
+  custom:scripting/monoscript/fileName/OVRProjectSetupSettingsProvider.cs: 2aacda54eea8c5321320c30486de461e -> 
+  custom:scripting/monoscript/fileName/OVRTask.gen.cs: bae582d61785011733d8a0fa7f78c192 -> 
+  custom:scripting/monoscript/fileName/RoomMeshBlockData.cs: 3ab4a4b148c05ca7606080a45615435e -> 
+  custom:scripting/monoscript/fileName/OVRLocalProjectSettings.cs: 2fd2cc986f7459f37390a35c5a118141 -> 
+  custom:scripting/monoscript/fileName/OVRCameraComposition.cs: d1c1e1a5ee96aaa9907490bebb1970c9 -> 
+  custom:scripting/monoscript/fileName/OVRCustomFaceEditor.cs: b523e958ce9ce37633602aa964f81de0 -> 
+  custom:scripting/monoscript/fileName/ActionHook.cs: b02ce7c5c1f394cb4e901bf660f1617a -> 
+  custom:scripting/monoscript/fileName/DebugInspectorInspector.cs: deb5009d759aa1225c4233ebdf5cb576 -> 
+  custom:scripting/monoscript/fileName/OVRConfigurationTaskRegistry.cs: f636403f15c6747c17bfca2618eb694d -> 
+  custom:scripting/monoscript/fileName/OVRUnityHumanoidSkeletonRetargeter.cs: 9e2f7580ff64771261b92c096e836d6f -> 
+  custom:scripting/monoscript/fileName/OVRProjectSetupQualityTasks.cs: 9d12ae8928934a68ca258e1a2b73f0cd -> 
+  custom:scripting/monoscript/fileName/SharedSpatialAnchorSetupRules.cs: 3aa28ed1f0afa2ef9cd3e58bebaf18c2 -> 
+  custom:scripting/monoscript/fileName/Inspector.cs: 7a4b7dec959df28f6b914017d5a202fe -> 7c309356229b29ee47c27e05f1d86d6a
+  custom:scripting/monoscript/fileName/LayoutStyle.cs: c6af13a882525dea7f2e3b6972e5e207 -> 
+  custom:scripting/monoscript/fileName/TextStyle.cs: 743d7e23edc444cd0e52739e8808f04e -> 
+  custom:scripting/monoscript/fileName/OVRPlatformToolSettings.cs: 2f83cc1ee17916b93a898887079b377a -> 
+  custom:scripting/monoscript/fileName/OVROverlayCanvas.cs: e2642b0883ac18875dd242de25dca5f5 -> 
+  custom:scripting/monoscript/fileName/OVRSpectatorModeDomeTest.cs: 66241c7db07e677541ed366a3978750a -> 
+  custom:scripting/monoscript/fileName/TestSceneUsage.cs: 83726d1e602e1b39b4109b8ccb19051e -> 
+  custom:scripting/monoscript/fileName/StatusMenu.cs: 15fd0f745a2311ac2a915597150eec24 -> 
+  custom:scripting/monoscript/fileName/GroupedGuideItem.cs: 9818aea35aa6b1b5afaf6e61f3e4cc97 -> 
