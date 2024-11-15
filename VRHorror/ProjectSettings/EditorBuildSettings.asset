@@ -4,7 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Private/Tachibana/Tachibana.unity
+    guid: 707abe834402f2047bf14db6e63ed46b
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 1bdb803df0eceab46807ee55efc62552, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 12d4258d1cf7868409684e476d1402bf, type: 2}
