@@ -23,7 +23,8 @@ public class GetItem : MonoBehaviour
 
     private void Update()
     {
-        
+        if (parameta.hp > 0)
+            FlashMove();
     }
 
     private void LateUpdate()
@@ -47,6 +48,8 @@ public class GetItem : MonoBehaviour
                 Rigidbody RD = m_item.GetComponent<Rigidbody>();
                 RD.useGravity = true;
                 RD.constraints = RigidbodyConstraints.None;
+
+
 
               
                 itemchain = null;
@@ -78,7 +81,37 @@ public class GetItem : MonoBehaviour
             RD.constraints = RigidbodyConstraints.FreezeAll;
             other.transform.parent = this.transform;
             other.transform.position = this.transform.position;
+
+          /*  if (other.GetComponent<HandLights>())
+            {
+                this.transform.rotation = Quaternion.Euler(-30, 0, 0);
+                other.transform.rotation = this.transform.rotation;
+            }
+            else
+            {
+                other.transform.rotation = this.transform.rotation;
+            }*/
+
             m_item = other.transform;
+        }
+    }
+
+    public void FlashMove()
+    {
+        if (!m_item)
+            return;
+        if (!itemchain)
+            return;
+        if (!itemchain.trggerOn)
+        {
+            bool trigeron = false;
+            if (OVRInput.Get(OVRInput.RawButton.RIndexTrigger) || Input.GetKeyDown(KeyCode.Space) && hand)
+                trigeron = true;
+            if (OVRInput.Get(OVRInput.RawButton.LIndexTrigger) || Input.GetKeyDown(KeyCode.Space) && !hand)
+                trigeron = true;
+            if (!trigeron)
+                return;
+            itemchain.trggerOn = true;
         }
     }
 }

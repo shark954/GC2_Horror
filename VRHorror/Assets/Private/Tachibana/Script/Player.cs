@@ -4,16 +4,19 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    // 移動速度
-    public float moveSpeed = 3.0f;
-    // VRカメラ（HMD）のTransform
-    public Transform vrCamera;
-    // プレイヤーのRigidbody
-    private Rigidbody playerRigidbody;
+    [SerializeField]
+    private float m_moveSpeed = 2.0f;
+    //1秒間で回転する角度
+    [SerializeField]
+    private float m_rotateSpeed = 90.0f;
+    //カメラのTransform
+    [SerializeField]
+    private Transform m_camTF = null;
 
+    private Rigidbody m_rb = null;
     private void Awake()
     {
-        playerRigidbody = GetComponent<Rigidbody>();
+        m_rb = GetComponent<Rigidbody>();
     }
 
 
@@ -27,25 +30,27 @@ public class Player : MonoBehaviour
 
     private void MoveSystem()
     {
-        // 左スティックの入力を取得
-        Vector2 input = OVRInput.Get(OVRInput.RawAxis2D.LThumbstick);
+        Vector2 inputL = OVRInput.Get(OVRInput.RawAxis2D.LThumbstick);
+        if (inputL.sqrMagnitude > 0f) //入力されたら
+        {
+            //カメラからの横と正面を取得
+            Vector3 side = m_camTF.right;
+            side.y = 0f;
+            side.Normalize();
+            Vector3 forword = m_camTF.forward;
+            forword.y = 0f;
+            forword.Normalize();
+            //移動ベクトル(横＋正面)
+            Vector3 move = side * inputL.x + forword * inputL.y;
+            //移動後の座標（現在地＋移動方向＊移動量）
+            Vector3 pos = transform.position + move * m_moveSpeed * Time.fixedDeltaTime;
+            //Rigidbodyに移動後の座標を設定
+            m_rb.MovePosition(pos);
+        }
 
-        // 入力をカメラの方向に基づいて変換
-        Vector3 forward = vrCamera.forward;
-        Vector3 right = vrCamera.right;
-
-        // 水平方向だけ考慮
-        forward.y = 0;
-        right.y = 0;
-
-        forward.Normalize();
-        right.Normalize();
-
-        // 移動ベクトルを計算
-        Vector3 movement = (forward * input.y + right * input.x) * moveSpeed;
-
-        // Rigidbodyで移動
-        Vector3 newPosition = playerRigidbody.position + movement * Time.fixedDeltaTime;
-        playerRigidbody.MovePosition(newPosition);
+        //右アナログスティックの入力値
+        Vector2 inputR = OVRInput.Get(OVRInput.RawAxis2D.RThumbstick);
+        //入力値に合わせてプレイヤーを回転
+        transform.Rotate(0f, inputR.x * m_rotateSpeed * Time.fixedDeltaTime, 0f);
     }
 }
