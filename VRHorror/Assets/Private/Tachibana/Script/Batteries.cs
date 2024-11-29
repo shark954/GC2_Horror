@@ -10,6 +10,7 @@ public class Batteries : MonoBehaviour
 
     public float addBatterie;
 
+
     private void Update()
     {
         if (this.transform.parent)

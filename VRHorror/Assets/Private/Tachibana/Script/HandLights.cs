@@ -38,8 +38,10 @@ public class HandLights : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //このオブジェクトに親があれば
         if (this.transform.parent)
         {
+            //colliderをトリガーに
             handlight.isTrigger = true;
         }
         else
