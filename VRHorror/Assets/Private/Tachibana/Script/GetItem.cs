@@ -82,19 +82,19 @@ public class GetItem : MonoBehaviour
             other.transform.parent = this.transform;
             other.transform.position = this.transform.position;
 
-            /*  if (other.GetComponent<HandLights>())
-              {
-                  this.transform.rotation = Quaternion.Euler(-30, 0, 0);
-                  other.transform.rotation = this.transform.rotation;
-              }
-              else
-              {
-                  other.transform.rotation = this.transform.rotation;
-              }*/
+            if (other.GetComponent<HandLights>())
+            {
+                this.transform.rotation = Quaternion.Euler(-15, 0, 0);
+                other.transform.rotation = this.transform.rotation;
+            }
+            else
+            {
+                other.transform.rotation = this.transform.rotation;
+            }
 
             if (other.GetComponent<Batteries>())
             {
-              
+
             }
 
             m_item = other.transform;

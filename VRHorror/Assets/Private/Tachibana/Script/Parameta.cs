@@ -37,7 +37,7 @@ public class Parameta : MonoBehaviour
                 hp = 0;
                 death = true;
                 //animator.SetBool("Death", death);
-                Debug.Log("HP‚ª0‚É‚È‚Á‚½‚æ[[");
+                Debug.Log("<color=blue> HP‚ª0‚É‚È‚Á‚½‚æ</color>");
             }
         }
         return flag;
