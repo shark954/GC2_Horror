@@ -105,13 +105,24 @@ public class GetItem : MonoBehaviour
         if (!itemchain.trggerOn)
         {
             bool trigeron = false;
-            if (OVRInput.Get(OVRInput.RawButton.RIndexTrigger) || Input.GetKeyDown(KeyCode.Space) && hand)
+            if (OVRInput.GetDown(OVRInput.RawButton.RIndexTrigger) || Input.GetMouseButtonDown(0) && hand)
                 trigeron = true;
-            if (OVRInput.Get(OVRInput.RawButton.LIndexTrigger) || Input.GetKeyDown(KeyCode.Space) && !hand)
+            if (OVRInput.GetDown(OVRInput.RawButton.LIndexTrigger) || Input.GetMouseButtonDown(0) && !hand)
                 trigeron = true;
             if (!trigeron)
                 return;
             itemchain.trggerOn = true;
+        }
+        else
+        {
+            bool trigeron = false;
+            if (OVRInput.GetDown(OVRInput.RawButton.RIndexTrigger) || Input.GetMouseButtonDown(0) && hand)
+                trigeron = true;
+            if (OVRInput.GetDown(OVRInput.RawButton.LIndexTrigger) || Input.GetMouseButtonDown(0) && !hand)
+                trigeron = true;
+            if (!trigeron)
+                return;
+            itemchain.trggerOn = false;
         }
     }
 }
