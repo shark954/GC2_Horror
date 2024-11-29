@@ -7,6 +7,9 @@ public class Batteries : MonoBehaviour
     [Header("“d’r‚Ì“–‚½‚è”»’è"), SerializeField]
     private BoxCollider batterie;
 
+
+    public float addBatterie;
+
     private void Update()
     {
         if (this.transform.parent)

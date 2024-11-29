@@ -23,7 +23,7 @@ public class HandLights : MonoBehaviour
     [Header("バッテリー残量表示"),SerializeField]
     private Slider slider;
 
-    [SerializeField]
+    [SerializeField]    //sliderのオン・オフ用
     private GameObject bar;
 
     // Start is called before the first frame update
@@ -51,6 +51,7 @@ public class HandLights : MonoBehaviour
         BatteriesCount();
     }
 
+    //ライトのオン・オフ
     public void FlashOwder()
     {
         if (!item)
@@ -68,6 +69,7 @@ public class HandLights : MonoBehaviour
 
     }
 
+    //点灯
     public void TurnOn()
     {
         spotligth.SetActive(true);
@@ -82,12 +84,13 @@ public class HandLights : MonoBehaviour
         }
     }
 
+    //消灯
     public void Turnoff()
     {
         spotligth.SetActive(false);
     }
 
-
+    //バッテリー計算
     private void BatteriesCount()
     {
           if (transform.parent != null)

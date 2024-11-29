@@ -24,7 +24,7 @@ public class Parameta : MonoBehaviour
     {
         
     }
-
+    //ダメージ計算
     public bool Hitdamage(int damage)
     {
         bool flag = false;
@@ -42,13 +42,14 @@ public class Parameta : MonoBehaviour
         }
         return flag;
     }
-
+    //死亡
     public void Die(float destroyTime)
     {
         Destroy(this.gameObject, destroyTime);
         Debug.Log("消えた");
     }
 
+    //オブジェクトの破壊時に呼び出し
     private void OnDestroy()
     {
         if (!effect)

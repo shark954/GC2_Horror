@@ -6,7 +6,7 @@ using UnityEngine.SocialPlatforms.Impl;
 public class GetItem : MonoBehaviour
 {
     [Header("アイテム")]
-    public Transform m_item;
+    protected Transform m_item;
     [Header("アイテム類と手をつなぐやつ")]
     public Item itemchain;
     [Header("パラメータ")]
@@ -31,17 +31,18 @@ public class GetItem : MonoBehaviour
     {
         if (m_item && itemchain)
         {
+            //Aボタンでアイテムを離す
             if (OVRInput.Get(OVRInput.RawButton.A) || Input.GetKeyDown(KeyCode.F) && hand)
             {
                 Rigidbody RD = m_item.GetComponent<Rigidbody>();
                 RD.useGravity = true;
                 RD.constraints = RigidbodyConstraints.None;
 
-
                 itemchain = null;
                 m_item.transform.parent = null;
                 m_item = null;
             }
+            //Xボタンでアイテムを離す
             if (OVRInput.Get(OVRInput.RawButton.X) || Input.GetKeyDown(KeyCode.F) && !hand)
             {
 
@@ -49,9 +50,6 @@ public class GetItem : MonoBehaviour
                 RD.useGravity = true;
                 RD.constraints = RigidbodyConstraints.None;
 
-
-
-              
                 itemchain = null;
                 m_item.transform.parent = null;
                 m_item = null;
@@ -60,6 +58,7 @@ public class GetItem : MonoBehaviour
         }
     }
 
+    //アイテムを拾う
     private void OnTriggerStay(Collider other)
     {
         if (m_item)
@@ -73,6 +72,7 @@ public class GetItem : MonoBehaviour
         if (!trigeron)
             return;
 
+        //手のTransformに合わせる
         if (other.GetComponent<Item>())
         {
             itemchain = other.GetComponent<Item>();
@@ -82,26 +82,33 @@ public class GetItem : MonoBehaviour
             other.transform.parent = this.transform;
             other.transform.position = this.transform.position;
 
-          /*  if (other.GetComponent<HandLights>())
+            /*  if (other.GetComponent<HandLights>())
+              {
+                  this.transform.rotation = Quaternion.Euler(-30, 0, 0);
+                  other.transform.rotation = this.transform.rotation;
+              }
+              else
+              {
+                  other.transform.rotation = this.transform.rotation;
+              }*/
+
+            if (other.GetComponent<Batteries>())
             {
-                this.transform.rotation = Quaternion.Euler(-30, 0, 0);
-                other.transform.rotation = this.transform.rotation;
+              
             }
-            else
-            {
-                other.transform.rotation = this.transform.rotation;
-            }*/
 
             m_item = other.transform;
         }
     }
 
+    //ライトを光らせる
     public void FlashMove()
     {
         if (!m_item)
             return;
         if (!itemchain)
             return;
+        //点灯
         if (!itemchain.trggerOn)
         {
             bool trigeron = false;
@@ -113,6 +120,7 @@ public class GetItem : MonoBehaviour
                 return;
             itemchain.trggerOn = true;
         }
+        //消灯
         else
         {
             bool trigeron = false;
