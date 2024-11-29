@@ -16,6 +16,9 @@ public class GetItem : MonoBehaviour
     [Header("true右,false左")]    //手の左右判別
     public bool hand = false;
 
+    [Header("")]
+    public HandAnimation handAnim;
+
     private void Start()
     {
 
@@ -25,6 +28,12 @@ public class GetItem : MonoBehaviour
     {
         if (parameta.hp > 0)
             FlashMove();
+
+        if (!m_item)
+        {
+            HandMotion();
+        }
+
     }
 
     private void LateUpdate()
@@ -81,11 +90,13 @@ public class GetItem : MonoBehaviour
             RD.constraints = RigidbodyConstraints.FreezeAll;
             other.transform.parent = this.transform;
             other.transform.position = this.transform.position;
+            
 
             if (other.GetComponent<HandLights>())
             {
                 this.transform.rotation = Quaternion.Euler(-15, 0, 0);
                 other.transform.rotation = this.transform.rotation;
+
             }
             else
             {
@@ -119,6 +130,7 @@ public class GetItem : MonoBehaviour
             if (!trigeron)
                 return;
             itemchain.trggerOn = true;
+            handAnim.animator.enabled = true;
         }
         //消灯
         else
@@ -131,6 +143,28 @@ public class GetItem : MonoBehaviour
             if (!trigeron)
                 return;
             itemchain.trggerOn = false;
+            handAnim.animator.enabled = false;
+        }
+    }
+
+    private void HandMotion()
+    {
+        if (handAnim.animator.enabled == false)
+        {
+            //グー
+            if (OVRInput.Get(OVRInput.RawButton.RHandTrigger) || Input.GetMouseButtonDown(0) && hand)
+                handAnim.animator.enabled = true;
+            if (OVRInput.Get(OVRInput.RawButton.LHandTrigger) || Input.GetMouseButtonDown(0) && !hand)
+                handAnim.animator.enabled = true;
+        }
+
+        if (handAnim.animator.enabled == true)
+        {
+            //パー
+            if (OVRInput.GetUp(OVRInput.RawButton.RHandTrigger) || Input.GetMouseButtonDown(1) && hand)
+                handAnim.animator.enabled = false;
+            if (OVRInput.GetUp(OVRInput.RawButton.LHandTrigger) || Input.GetMouseButtonDown(1) && !hand)
+                handAnim.animator.enabled = false;
         }
     }
 }
