@@ -10,7 +10,7 @@ public class Batteries : MonoBehaviour
     [Header("バッテリー回復量")]
     public float batteryRestoreAmount = 20f;
 
-    [Tooltip("回復にかかる時間 (秒)")]
+    [Header("回復にかかる時間 (秒)")]
     public float restoreDuration = 5f;
 
     

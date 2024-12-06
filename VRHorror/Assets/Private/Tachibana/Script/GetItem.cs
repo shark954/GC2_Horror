@@ -94,7 +94,7 @@ public class GetItem : MonoBehaviour
             other.transform.position = this.transform.position;
 
 
-            if (other.GetComponent<HandLights>())
+            if (other.CompareTag("HandLights"))
             {
                 this.transform.rotation = Quaternion.Euler(-15, 0, 0);
                 other.transform.rotation = this.transform.rotation;
@@ -108,7 +108,7 @@ public class GetItem : MonoBehaviour
 
             if (lightflag)
             {
-                if (other.GetComponent<Batteries>())
+                if (other.CompareTag("Batteries"))
                 {
                     Batteries batteries = other.GetComponent<Batteries>();
                     if (batteries != null)
