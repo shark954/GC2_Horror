@@ -12,7 +12,7 @@ public class HandAnimation : MonoBehaviour
     {
         if (animator != null)
             animator = GetComponent<Animator>();
-        animator.enabled = false;
+        
     }
 
     // Update is called once per frame
