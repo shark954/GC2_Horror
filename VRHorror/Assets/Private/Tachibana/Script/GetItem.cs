@@ -16,6 +16,12 @@ public class GetItem : MonoBehaviour
     [Header("true右,false左")]    //手の左右判別
     public bool hand = false;
 
+    [Header("右手アニメーション")]
+    public HandAnimation handAnim_R;
+
+    [Header("左手アニメーション")]
+    public HandAnimation handAnim_L;
+
     private void Start()
     {
 
@@ -25,6 +31,9 @@ public class GetItem : MonoBehaviour
     {
         if (parameta.hp > 0)
             FlashMove();
+
+        HandMotion();
+
     }
 
     private void LateUpdate()
@@ -32,7 +41,7 @@ public class GetItem : MonoBehaviour
         if (m_item && itemchain)
         {
             //Aボタンでアイテムを離す
-            if (OVRInput.Get(OVRInput.RawButton.A) || Input.GetKeyDown(KeyCode.F) && hand)
+            if (OVRInput.GetUp(OVRInput.RawButton.RHandTrigger) && hand || Input.GetKeyDown(KeyCode.F) && hand)
             {
                 Rigidbody RD = m_item.GetComponent<Rigidbody>();
                 RD.useGravity = true;
@@ -43,7 +52,7 @@ public class GetItem : MonoBehaviour
                 m_item = null;
             }
             //Xボタンでアイテムを離す
-            if (OVRInput.Get(OVRInput.RawButton.X) || Input.GetKeyDown(KeyCode.F) && !hand)
+            if (OVRInput.GetUp(OVRInput.RawButton.LHandTrigger) && !hand || Input.GetKeyDown(KeyCode.F) && !hand)
             {
 
                 Rigidbody RD = m_item.GetComponent<Rigidbody>();
@@ -55,6 +64,7 @@ public class GetItem : MonoBehaviour
                 m_item = null;
 
             }
+            
         }
     }
 
@@ -65,9 +75,9 @@ public class GetItem : MonoBehaviour
             return;
         bool trigeron = false;
 
-        if (OVRInput.Get(OVRInput.RawButton.RHandTrigger) || Input.GetKeyDown(KeyCode.E) && hand)
+        if (OVRInput.Get(OVRInput.RawButton.RHandTrigger) && hand || Input.GetKeyDown(KeyCode.E) && hand)
             trigeron = true;
-        if (OVRInput.Get(OVRInput.RawButton.LHandTrigger) || Input.GetKeyDown(KeyCode.E) && !hand)
+        if (OVRInput.Get(OVRInput.RawButton.LHandTrigger) && !hand || Input.GetKeyDown(KeyCode.E) && !hand)
             trigeron = true;
         if (!trigeron)
             return;
@@ -82,10 +92,12 @@ public class GetItem : MonoBehaviour
             other.transform.parent = this.transform;
             other.transform.position = this.transform.position;
 
+
             if (other.GetComponent<HandLights>())
             {
                 this.transform.rotation = Quaternion.Euler(-15, 0, 0);
                 other.transform.rotation = this.transform.rotation;
+
             }
             else
             {
@@ -96,7 +108,7 @@ public class GetItem : MonoBehaviour
             {
 
             }
-
+           
             m_item = other.transform;
         }
     }
@@ -112,25 +124,44 @@ public class GetItem : MonoBehaviour
         if (!itemchain.trggerOn)
         {
             bool trigeron = false;
-            if (OVRInput.GetDown(OVRInput.RawButton.RIndexTrigger) || Input.GetMouseButtonDown(0) && hand)
+            if (OVRInput.GetDown(OVRInput.RawButton.RIndexTrigger) && hand || Input.GetMouseButtonDown(0) && hand)
                 trigeron = true;
-            if (OVRInput.GetDown(OVRInput.RawButton.LIndexTrigger) || Input.GetMouseButtonDown(0) && !hand)
+            if (OVRInput.GetDown(OVRInput.RawButton.LIndexTrigger) && !hand || Input.GetMouseButtonDown(0) && !hand)
                 trigeron = true;
             if (!trigeron)
                 return;
             itemchain.trggerOn = true;
+
         }
         //消灯
         else
         {
             bool trigeron = false;
-            if (OVRInput.GetDown(OVRInput.RawButton.RIndexTrigger) || Input.GetMouseButtonDown(0) && hand)
+            if (OVRInput.GetDown(OVRInput.RawButton.RIndexTrigger) && hand || Input.GetMouseButtonDown(0) && hand)
                 trigeron = true;
-            if (OVRInput.GetDown(OVRInput.RawButton.LIndexTrigger) || Input.GetMouseButtonDown(0) && !hand)
+            if (OVRInput.GetDown(OVRInput.RawButton.LIndexTrigger) && !hand || Input.GetMouseButtonDown(0) && !hand)
                 trigeron = true;
             if (!trigeron)
                 return;
             itemchain.trggerOn = false;
+
+        }
+    }
+
+
+    private void HandMotion()
+    {
+
+        if (handAnim_R != null)
+        {
+            bool isGrabR = OVRInput.Get(OVRInput.RawButton.RHandTrigger) && hand || Input.GetMouseButton(0) && hand;
+            handAnim_R.animator.SetBool("IsGrabR", isGrabR);
+        }
+
+        if (handAnim_L != null)
+        {
+            bool isGrabL = OVRInput.Get(OVRInput.RawButton.LHandTrigger) && !hand || Input.GetMouseButton(0) && !hand;
+            handAnim_L.animator.SetBool("IsGrabL", isGrabL);
         }
     }
 }
