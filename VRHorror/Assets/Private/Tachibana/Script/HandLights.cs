@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,39 +8,38 @@ public class HandLights : MonoBehaviour
     private BoxCollider handlight;
 
     [Header("ライトの光"), SerializeField]
-    private GameObject spotligth;
+    private GameObject spotlight;
 
     public Item item;
-
-   
 
     [Header("バッテリー容量")]
     public float batteries_mag;
     [Header("バッテリー最大容量")]
     public float batteries_maxmag;
 
-    [Header("バッテリー残量表示"),SerializeField]
+    [Header("バッテリー残量表示"), SerializeField]
     private Slider slider;
 
     [SerializeField]    //sliderのオン・オフ用
     private GameObject bar;
 
+    private Coroutine restoreCoroutine; // バッテリー回復コルーチンの参照を保持
+
     // Start is called before the first frame update
     void Start()
     {
-        spotligth.SetActive(false);
-
+        spotlight.SetActive(false);
         bar.SetActive(false);
-        batteries_mag = batteries_maxmag;
+        batteries_mag = batteries_maxmag; // バッテリーを最大値に初期化
     }
 
     // Update is called once per frame
     void Update()
     {
-        //このオブジェクトに親があれば
+        // このオブジェクトに親があれば
         if (this.transform.parent)
         {
-            //colliderをトリガーに
+            // Colliderをトリガーに
             handlight.isTrigger = true;
         }
         else
@@ -53,11 +51,12 @@ public class HandLights : MonoBehaviour
         BatteriesCount();
     }
 
-    //ライトのオン・オフ
+    // ライトのオン・オフ
     public void FlashOwder()
     {
         if (!item)
             return;
+
         if (item.trggerOn && batteries_mag > 0)
         {
             TurnOn();
@@ -65,42 +64,82 @@ public class HandLights : MonoBehaviour
 
         if (!item.trggerOn || batteries_mag <= 0)
         {
-            Turnoff();
+            TurnOff();
         }
-
-
     }
 
-    //点灯
+    // 点灯
     public void TurnOn()
     {
-        spotligth.SetActive(true);
+        spotlight.SetActive(true);
 
         if (batteries_mag > 0)
         {
-            batteries_mag -= 0.5f;
+            batteries_mag -= 0.5f * Time.deltaTime; // バッテリーを減らす
             if (batteries_mag <= 0)
             {
-                Turnoff();
+                TurnOff();
             }
         }
     }
 
-    //消灯
-    public void Turnoff()
+    // 消灯
+    public void TurnOff()
     {
-        spotligth.SetActive(false);
+        spotlight.SetActive(false);
     }
 
-    //バッテリー計算
+    // バッテリー計算
     private void BatteriesCount()
     {
-          if (transform.parent != null)
-          {
+        if (transform.parent != null)
+        {
             bar.SetActive(true);
-          }
+        }
 
-        slider.value = batteries_mag ;
+        slider.value = batteries_mag / batteries_maxmag; // スライダーに割合を反映
         Debug.Log("slider.value : " + slider.value);
+    }
+
+    /// <summary>
+    /// バッテリー回復を開始
+    /// </summary>
+    /// <param name="amount">回復量</param>
+    /// <param name="duration">回復にかける時間 (秒)</param>
+    public void StartBatteryRestore(float amount, float duration)
+    {
+        // 既存の回復コルーチンがあれば停止
+        if (restoreCoroutine != null)
+        {
+            StopCoroutine(restoreCoroutine);
+        }
+
+        // 新しい回復コルーチンを開始
+        restoreCoroutine = StartCoroutine(RestoreBatteryOverTime(amount, duration));
+    }
+
+    /// <summary>
+    /// バッテリーを時間経過で回復
+    /// </summary>
+    /// <param name="amount">回復量</param>
+    /// <param name="duration">回復にかける時間 (秒)</param>
+    /// <returns>IEnumerator</returns>
+    private IEnumerator RestoreBatteryOverTime(float amount, float duration)
+    {
+        float initialBattery = batteries_mag; // 現在のバッテリー量
+        float targetBattery = Mathf.Clamp(batteries_mag + amount, 0, batteries_maxmag); // 回復後のバッテリー量
+        float elapsedTime = 0f;
+
+        // 指定時間かけて回復
+        while (elapsedTime < duration)
+        {
+            elapsedTime += Time.deltaTime;
+            batteries_mag = Mathf.Lerp(initialBattery, targetBattery, elapsedTime / duration); // 補間
+            slider.value = batteries_mag / batteries_maxmag; // スライダー更新
+            yield return null; // 次のフレームまで待機
+        }
+
+        batteries_mag = targetBattery; // 最終的な値を設定
+        restoreCoroutine = null; // コルーチン参照をリセット
     }
 }

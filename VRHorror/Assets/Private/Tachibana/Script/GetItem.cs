@@ -74,6 +74,7 @@ public class GetItem : MonoBehaviour
         if (m_item)
             return;
         bool trigeron = false;
+        bool lightflag = false;
 
         if (OVRInput.Get(OVRInput.RawButton.RHandTrigger) && hand || Input.GetKeyDown(KeyCode.E) && hand)
             trigeron = true;
@@ -93,10 +94,11 @@ public class GetItem : MonoBehaviour
             other.transform.position = this.transform.position;
 
 
-            if (other.GetComponent<HandLights>())
+            if (other.CompareTag("HandLights"))
             {
                 this.transform.rotation = Quaternion.Euler(-15, 0, 0);
                 other.transform.rotation = this.transform.rotation;
+                lightflag = true;
 
             }
             else
@@ -104,12 +106,27 @@ public class GetItem : MonoBehaviour
                 other.transform.rotation = this.transform.rotation;
             }
 
-            if (other.GetComponent<Batteries>())
+            if (lightflag)
             {
+                if (other.CompareTag("Batteries"))
+                {
+                    Batteries batteries = other.GetComponent<Batteries>();
+                    if (batteries != null)
+                    {
+                        HandLights handLights = other.GetComponent<HandLights>();
+                        // バッテリー回復を開始
+                        handLights.StartBatteryRestore(batteries.batteryRestoreAmount, batteries.restoreDuration);
 
+                        // アイテムを削除
+                        Destroy(other.gameObject);
+
+                        Debug.Log($"Player picked up a battery item. Restoring {batteries.batteryRestoreAmount} over {batteries.restoreDuration} seconds.");
+                    }
+
+                }
+
+                m_item = other.transform;
             }
-           
-            m_item = other.transform;
         }
     }
 
