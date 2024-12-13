@@ -29,8 +29,9 @@ public class HandLights : MonoBehaviour
     void Start()
     {
         spotlight.SetActive(false);
-        bar.SetActive(false);
-        batteries_mag = batteries_maxmag; // バッテリーを最大値に初期化
+        bar.SetActive(true);
+        batteries_mag = batteries_maxmag ; // バッテリーを最大値に初期化
+        //StartBatteryRestore(50f, 5f);
     }
 
     // Update is called once per frame
@@ -108,13 +109,12 @@ public class HandLights : MonoBehaviour
     /// <param name="duration">回復にかける時間 (秒)</param>
     public void StartBatteryRestore(float amount, float duration)
     {
-        // 既存の回復コルーチンがあれば停止
         if (restoreCoroutine != null)
         {
             StopCoroutine(restoreCoroutine);
+            Debug.Log("既存のバッテリー回復コルーチンを停止");
         }
-
-        // 新しい回復コルーチンを開始
+        Debug.Log($"バッテリー回復を開始: {amount}、所要時間: {duration}");
         restoreCoroutine = StartCoroutine(RestoreBatteryOverTime(amount, duration));
     }
 
@@ -126,20 +126,20 @@ public class HandLights : MonoBehaviour
     /// <returns>IEnumerator</returns>
     private IEnumerator RestoreBatteryOverTime(float amount, float duration)
     {
-        float initialBattery = batteries_mag; // 現在のバッテリー量
-        float targetBattery = Mathf.Clamp(batteries_mag + amount, 0, batteries_maxmag); // 回復後のバッテリー量
+        float initialBattery = batteries_mag;
+        float targetBattery = Mathf.Clamp(batteries_mag + amount, 0, batteries_maxmag);
         float elapsedTime = 0f;
 
-        // 指定時間かけて回復
         while (elapsedTime < duration)
         {
             elapsedTime += Time.deltaTime;
-            batteries_mag = Mathf.Lerp(initialBattery, targetBattery, elapsedTime / duration); // 補間
-            slider.value = batteries_mag / batteries_maxmag; // スライダー更新
-            yield return null; // 次のフレームまで待機
+            batteries_mag = Mathf.Lerp(initialBattery, targetBattery, elapsedTime / duration);
+            slider.value = batteries_mag / batteries_maxmag; // UIスライダーの更新
+            Debug.Log($"バッテリー残量: {batteries_mag}");
+            yield return null;
         }
 
-        batteries_mag = targetBattery; // 最終的な値を設定
-        restoreCoroutine = null; // コルーチン参照をリセット
+        batteries_mag = targetBattery;
+        restoreCoroutine = null;
     }
 }

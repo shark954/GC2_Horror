@@ -33,7 +33,6 @@ public class GetItem : MonoBehaviour
             FlashMove();
 
         HandMotion();
-
     }
 
     private void LateUpdate()
@@ -54,7 +53,6 @@ public class GetItem : MonoBehaviour
             //Xボタンでアイテムを離す
             if (OVRInput.GetUp(OVRInput.RawButton.LHandTrigger) && !hand || Input.GetKeyDown(KeyCode.F) && !hand)
             {
-
                 Rigidbody RD = m_item.GetComponent<Rigidbody>();
                 RD.useGravity = true;
                 RD.constraints = RigidbodyConstraints.None;
@@ -62,9 +60,7 @@ public class GetItem : MonoBehaviour
                 itemchain = null;
                 m_item.transform.parent = null;
                 m_item = null;
-
             }
-            
         }
     }
 
@@ -76,9 +72,9 @@ public class GetItem : MonoBehaviour
         bool trigeron = false;
         bool lightflag = false;
 
-        if (OVRInput.Get(OVRInput.RawButton.RHandTrigger) && hand || Input.GetKeyDown(KeyCode.E) && hand)
+        if (OVRInput.Get(OVRInput.RawButton.RHandTrigger) && hand || Input.GetKey(KeyCode.E) && hand)
             trigeron = true;
-        if (OVRInput.Get(OVRInput.RawButton.LHandTrigger) && !hand || Input.GetKeyDown(KeyCode.E) && !hand)
+        if (OVRInput.Get(OVRInput.RawButton.LHandTrigger) && !hand || Input.GetKey(KeyCode.E) && !hand)
             trigeron = true;
         if (!trigeron)
             return;
@@ -96,37 +92,34 @@ public class GetItem : MonoBehaviour
 
             if (other.CompareTag("HandLights"))
             {
-                this.transform.rotation = Quaternion.Euler(-15, 0, 0);
+               // this.transform.rotation = Quaternion.Euler(-15, 0, 0);
                 other.transform.rotation = this.transform.rotation;
                 lightflag = true;
-
             }
             else
             {
                 other.transform.rotation = this.transform.rotation;
             }
 
-            if (lightflag)
+            if (other.CompareTag("Batteries"))
             {
-                if (other.CompareTag("Batteries"))
+                Batteries batteries = other.GetComponent<Batteries>();
+                if (batteries != null)
                 {
-                    Batteries batteries = other.GetComponent<Batteries>();
-                    if (batteries != null)
+                    HandLights handLights = this.GetComponent<HandLights>(); // 手に持っているライトを直接取得
+                    if (handLights != null)
                     {
-                        HandLights handLights = other.GetComponent<HandLights>();
-                        // バッテリー回復を開始
                         handLights.StartBatteryRestore(batteries.batteryRestoreAmount, batteries.restoreDuration);
-
-                        // アイテムを削除
-                        Destroy(other.gameObject);
-
-                        Debug.Log($"Player picked up a battery item. Restoring {batteries.batteryRestoreAmount} over {batteries.restoreDuration} seconds.");
+                        Debug.Log($"バッテリーを回復: {batteries.batteryRestoreAmount}、所要時間: {batteries.restoreDuration} 秒");
                     }
-
+                    else
+                    {
+                        Debug.LogError("HandLights が見つかりません");
+                    }
+                    Destroy(other.gameObject); // バッテリーを削除
                 }
-
-                m_item = other.transform;
             }
+            m_item = other.transform;
         }
     }
 
