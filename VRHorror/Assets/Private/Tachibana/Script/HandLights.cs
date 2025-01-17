@@ -10,8 +10,8 @@ public class HandLights : MonoBehaviour
     [Header("ライトの光"), SerializeField]
     private GameObject spotlight;
 
-    public Item item;
-
+    public bool lightOn;
+   
     [Header("バッテリー容量")]
     public float batteries_mag;
     [Header("バッテリー最大容量")]
@@ -41,37 +41,19 @@ public class HandLights : MonoBehaviour
         if (this.transform.parent)
         {
             // Colliderをトリガーに
-            handlight.isTrigger = true;
+            handlight.enabled = false;
         }
         else
         {
-            handlight.isTrigger = false;
+            handlight.enabled = true;
         }
-
-        FlashOwder();
         BatteriesCount();
     }
 
     // ライトのオン・オフ
-    public void FlashOwder()
-    {
-        if (!item)
-            return;
-
-        if (item.trggerOn && batteries_mag > 0)
-        {
-            TurnOn();
-        }
-
-        if (!item.trggerOn || batteries_mag <= 0)
-        {
-            TurnOff();
-        }
-    }
-
-    // 点灯
     public void TurnOn()
     {
+        Debug.Log("ライトを点灯します");
         spotlight.SetActive(true);
 
         if (batteries_mag > 0)
@@ -84,11 +66,12 @@ public class HandLights : MonoBehaviour
         }
     }
 
-    // 消灯
     public void TurnOff()
     {
+        Debug.Log("ライトを消灯します");
         spotlight.SetActive(false);
     }
+
 
     // バッテリー計算
     private void BatteriesCount()
@@ -130,16 +113,20 @@ public class HandLights : MonoBehaviour
         float targetBattery = Mathf.Clamp(batteries_mag + amount, 0, batteries_maxmag);
         float elapsedTime = 0f;
 
+        Debug.Log($"バッテリー回復開始: 初期値 = {initialBattery}, 目標値 = {targetBattery}");
+
         while (elapsedTime < duration)
         {
             elapsedTime += Time.deltaTime;
             batteries_mag = Mathf.Lerp(initialBattery, targetBattery, elapsedTime / duration);
             slider.value = batteries_mag / batteries_maxmag; // UIスライダーの更新
-            Debug.Log($"バッテリー残量: {batteries_mag}");
+            Debug.Log($"回復中: バッテリー残量 = {batteries_mag}");
             yield return null;
         }
 
         batteries_mag = targetBattery;
+        Debug.Log($"バッテリー回復完了: 最終値 = {batteries_mag}");
         restoreCoroutine = null;
     }
+
 }
