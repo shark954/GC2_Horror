@@ -66,7 +66,7 @@ public class EnemyAI : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag==Player_tag)
+        if(other.gameObject.CompareTag("Player"))
         {
             isChasing = true;
         }
