@@ -20,11 +20,11 @@ public class Batteries : MonoBehaviour
     {
         if (this.transform.parent)
         {
-            batterie.isTrigger = true;
+            batterie.enabled = false;
         }
         else
         {
-            batterie.isTrigger = false;
+            batterie.enabled= true;
         }
     }
     

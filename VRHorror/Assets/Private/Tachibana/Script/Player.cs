@@ -12,19 +12,37 @@ public class Player : MonoBehaviour
     //カメラのTransform
     [SerializeField]
     private Transform m_camTF = null;
-
+    [SerializeField]
     private Rigidbody m_rb = null;
+
+    public Transform m_itemL = null;
+    public Transform m_itemR = null;
+
+    public bool tukamaeru = false;
+
+    public GameObject playerDummy;
+
+    public GameObject dummyObject;
+
+    public GameManager gameManager;
+
     private void Awake()
     {
         m_rb = GetComponent<Rigidbody>();
+        
     }
 
+    private void Update()
+    {
+       
+    }
 
     #region FixUpdate
 
     private void FixedUpdate()
     {
         MoveSystem();
+        Dummy();
     }
     #endregion
 
@@ -52,5 +70,19 @@ public class Player : MonoBehaviour
         Vector2 inputR = OVRInput.Get(OVRInput.RawAxis2D.RThumbstick);
         //入力値に合わせてプレイヤーを回転
         transform.Rotate(0f, inputR.x * m_rotateSpeed * Time.fixedDeltaTime, 0f);
+    }
+
+    public void Dummy()
+    {
+        if (dummyObject == null)
+        {
+             GameObject dummy = Instantiate(playerDummy, transform.position, transform.rotation);
+             dummyObject = dummy;
+        }
+       
+        if (!gameManager.gameOver)
+        {
+            dummyObject.transform.position = new Vector3(transform.position.x, 0.0f, transform.position.z);
+        }
     }
 }
